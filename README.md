@@ -12,7 +12,7 @@ characteristics
 * Basic customer CRUD;
 
 
-It is free to make changes and implementations and make the code more evolved.
+This is database
 
 | #   | Username | Password |
 | --- |:--------:| --------:|
