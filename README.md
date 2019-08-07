@@ -1,7 +1,5 @@
-# SpringBoot with AdminLTE 2
+# PLAIN TEMPLATE RUN SPRING-BOOT IN TOMCAT 
 ---
-
-Application with SpringBoot and the AdminLTE 2 template to facilitate development.
 
 
 characteristics
@@ -32,20 +30,6 @@ It is free to make changes and implementations and make the code more evolved.
 
 | #   | Username | Password |
 | --- |:--------:| --------:|
-| 1   | bruno    | 1234     |
-| 2   | naruto   | 1234     |
-
-## Screenshot
-
-Login Page
-
-![Login Page](img/login.png "Login Page")
-
-Dashboard Page
-
-![Dashboard Page](img/dashboard.png "Dashboard Page")
-
-List Page
-
-![List Page](img/list.png "List Page")
+| 1   | sora    | 1234     |
+| 2   | roxas   | 1234     |
 
