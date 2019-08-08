@@ -29,7 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/esbn-web/bootstrap/**", "/esbn-web/dist/**", "/esbn-web/plugins/**"
-                		,"/bootstrap/**", "/dist/**", "/plugins/**").permitAll()
+                		,"/bootstrap/**", "/dist/**", "/plugins/**","/style/**","/script/**","/file/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
