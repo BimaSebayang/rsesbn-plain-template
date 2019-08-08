@@ -1,0 +1,17 @@
+div.canvas {
+    display:           table-cell;
+    width:             1280px;
+    height:            800px;
+    background:        black;
+    vertical-align:    middle;
+}
+
+div.canvas > video {
+    display:           block;
+    margin:            auto;
+}
+
+div.canvas > img {
+    display:           block;
+    margin:            auto;
+}

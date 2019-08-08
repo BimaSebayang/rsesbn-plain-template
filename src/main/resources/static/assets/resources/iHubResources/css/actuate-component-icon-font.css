@@ -1,0 +1,155 @@
+.ac {
+  /* Use the following CSS code if you want to use data attributes for inserting your icons */
+
+  /* Use the following CSS code if you want to have a class per icon */
+
+  /*
+  Instead of a list of all class selectors,
+  you can use the generic selector below, but it's slower:
+  [class*="your-class-prefix"] {
+  */
+
+}
+@font-face {
+  font-family: 'actuate';
+  src: url('../fonts/actuate-apps/actuate.eot');
+  src: url('../fonts/actuate-apps/actuate.eot?#iefix') format('embedded-opentype'), url('../fonts/actuate-apps/actuate.woff') format('woff'), url('../fonts/actuate-apps/actuate.ttf') format('truetype'), url('../fonts/actuate-apps/actuate.svg#actuate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ac [data-icon]:before {
+  font-family: 'actuate';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ac .icon-actuate-workflow,
+.ac .icon-actuate-system-console,
+.ac .icon-actuate-security,
+.ac .icon-actuate-scheduling,
+.ac .icon-actuate-report-designer,
+.ac .icon-actuate-report,
+.ac .icon-actuate-predictions,
+.ac .icon-actuate-my-files,
+.ac .icon-actuate-metrics-management,
+.ac .icon-actuate-interactive-viewer,
+.ac .icon-actuate-interactive-crosstabs,
+.ac .icon-actuate-explorations,
+.ac .icon-actuate-e-presentment,
+.ac .icon-actuate-enrichment,
+.ac .icon-actuate-ds-management,
+.ac .icon-actuate-doc-transformation,
+.ac .icon-actuate-distribution,
+.ac .icon-actuate-data-modeler,
+.ac .icon-actuate-dashboard-designer,
+.ac .icon-actuate-dashboard,
+.ac .icon-actuate-archiving,
+.ac .icon-actuate-application-designer,
+.ac .icon-actuate-analytics,
+.ac .icon-actuate-admin-console,
+.ac .icon-ygg-repository-console,
+.ac .icon-ygg-repository,
+.ac .icon-ygg-process-management,
+.ac .icon-ygg-process-designer,
+.ac .icon-ygg-data-transformation {
+  font-family: 'actuate';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.ac .icon-actuate-workflow:before {
+  content: "\e000";
+}
+.ac .icon-actuate-system-console:before {
+  content: "\e001";
+}
+.ac .icon-actuate-security:before {
+  content: "\e002";
+}
+.ac .icon-actuate-scheduling:before {
+  content: "\e003";
+}
+.ac .icon-actuate-report-designer:before {
+  content: "\e004";
+}
+.ac .icon-actuate-report:before {
+  content: "\e005";
+}
+.ac .icon-actuate-predictions:before {
+  content: "\e006";
+}
+.ac .icon-actuate-my-files:before {
+  content: "\e007";
+}
+.ac .icon-actuate-metrics-management:before {
+  content: "\e008";
+}
+.ac .icon-actuate-interactive-viewer:before {
+  content: "\e009";
+}
+.ac .icon-actuate-interactive-crosstabs:before {
+  content: "\e00a";
+}
+.ac .icon-actuate-explorations:before {
+  content: "\e00b";
+}
+.ac .icon-actuate-e-presentment:before {
+  content: "\e00c";
+}
+.ac .icon-actuate-enrichment:before {
+  content: "\e00d";
+}
+.ac .icon-actuate-ds-management:before {
+  content: "\e00e";
+}
+.ac .icon-actuate-doc-transformation:before {
+  content: "\e00f";
+}
+.ac .icon-actuate-distribution:before {
+  content: "\e010";
+}
+.ac .icon-actuate-data-modeler:before {
+  content: "\e011";
+}
+.ac .icon-actuate-dashboard-designer:before {
+  content: "\e012";
+}
+.ac .icon-actuate-dashboard:before {
+  content: "\e013";
+}
+.ac .icon-actuate-archiving:before {
+  content: "\e014";
+}
+.ac .icon-actuate-application-designer:before {
+  content: "\e015";
+}
+.ac .icon-actuate-analytics:before {
+  content: "\e016";
+}
+.ac .icon-actuate-admin-console:before {
+  content: "\e017";
+}
+.ac .icon-ygg-repository-console:before {
+  content: "\e018";
+}
+.ac .icon-ygg-repository:before {
+  content: "\e019";
+}
+.ac .icon-ygg-process-management:before {
+  content: "\e01a";
+}
+.ac .icon-ygg-process-designer:before {
+  content: "\e01b";
+}
+.ac .icon-ygg-data-transformation:before {
+  content: "\e01c";
+}

@@ -1,0 +1,166 @@
+/******************************************************************************
+ *	Copyright (c) 2004 Actuate Corporation and others.
+ *	All rights reserved. This program and the accompanying materials 
+ *	are made available under the terms of the Eclipse Public License v1.0
+ *	which accompanies this distribution, and is available at
+ *	http://www.eclipse.org/legal/epl-v10.html
+ *	
+ *	Contributors:
+ *		Actuate Corporation - Initial implementation.
+ *****************************************************************************/
+
+@CHARSET "ISO-8859-1";
+
+.actuateViewerContainer ol
+{
+	margin:0;
+	padding:40px;
+	list-style: decimal; 
+}
+
+.actuateViewerContainer ul
+{
+	margin:0; 
+	padding:40px;
+	list-style: disc;
+}
+
+.actuateViewerContainer input
+{
+	border-radius			: 0px;
+	-webkit-border-radius	: 0px;
+	-moz-border-radius		: 0px;
+	-kHTML-border-radius	: 0px;
+}
+
+.actuateViewerContainer table,
+.actuateViewerContainer table tr,
+.actuateViewerContainer tr td,
+.actuateViewerContainer table tbody,
+.actuateViewerContainer table thead,
+.actuateViewerContainer table tfoot,
+.actuateViewerContainer table tr th,
+.actuateViewerContainer table tfoot tr tf {
+	margin:0;
+	padding:0;
+	background:none;
+	border:none;
+	border-collapse:collapse;
+	border-spacing:0;
+	background-image:none;
+}
+/* Copyright 1994-2006, Actuate Software Corp., All rights reserved. */
+
+@CHARSET "ISO-8859-1";
+
+
+/******************************************************************************
+ *	Shared Dialog Styles
+ *****************************************************************************/
+
+.actuate_shared_resource .iv_dialog_link_enabled
+{
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_shared_resource .iv_dialog_link_disabled
+{
+	color: #777777;
+	border-style: none;
+	text-decoration: underline;
+	cursor: default;
+}
+
+.formatdialog_label 
+{
+	font: 12px/12px 'Lato', tahoma, verdana, arial, sans-serif;
+	float:left; 
+	text-align:left;
+	margin-left:0px;
+	margin-top:1ex;
+	margin-bottom:0.5ex;
+}
+
+.defaultdialog_boldlabel 
+{
+	font: 12px/12px 'Lato', tahoma, verdana, arial, sans-serif;
+	float:left; 
+	text-align:left;
+	margin-left:0px;
+	margin-top:1ex;
+	margin-bottom:0.5ex;
+}
+
+.formatDataDialog_caption,
+.showColumnDialog_caption		
+{
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+/******************* FONT Dialog **************************************/
+.fontDialog_caption
+{
+	font-weight: bold;
+}
+
+.fontDialog_captionLast
+{
+	font-weight: bold;
+}
+
+.fontDialog_block
+{
+	margin-bottom: 12px;
+}
+
+.fontDialog_previewBox
+{
+	margin: 12px 2px 8px 2px; 
+	height: 35px; 
+	width: 315px; 
+	text-align: center; 
+	white-space: no-wrap; 
+	overflow: hidden;
+	border:1px solid #e1e1e1; 
+	border-radius:4px; 
+	background-color: #ffffff;
+}
+
+/******************* SAVE AS Dialog **************************************/
+.saveAsDialog_caption
+{
+	font-weight: bold;
+	padding: 20px 0 10px 0;
+}
+.saveAsDialog_block
+{
+	padding-bottom : 10px;
+}
+
+.saveAsDialog_btn .actuate-widget-btn-left,
+.saveAsDialog_btn .actuate-widget-btn-right,
+.saveAsDialog_btn .actuate-widget-btn-center
+{
+	background: none;
+}
+
+.saveAsDialog_folderUpBtn
+{
+	background: url('../images/folderUp16.png') no-repeat scroll 0 0 transparent !important;
+	padding-right: 12px !important;
+}
+
+.saveAsDialog_searchBtn
+{
+	background: url('../images/searchSml16.png') no-repeat scroll 0 0 transparent !important;
+	padding-right: 8px !important;
+}
+
+/******************* FORMAT Dialog **************************************/
+.formatDialog_caption
+{
+
+}

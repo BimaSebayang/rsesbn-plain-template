@@ -1,0 +1,566 @@
+/******************************************************************************
+ *	Copyright (c) 2008 Actuate Corporation and others.
+ *	All rights reserved. This program and the accompanying materials 
+ *	are made available under the terms of the Eclipse Public License v1.0
+ *	which accompanies this distribution, and is available at
+ *		http://www.eclipse.org/legal/epl-v10.html
+ *	
+ *	Contributors:
+ *		Actuate Corporation - Initial implementation.
+ *****************************************************************************/
+/**
+ * *** STANDARDS ***
+ *	z-index ordering (bottom to top) : Normal elements -> ComboBox -> DateControl -> (AutoSuggest | adHoc) 
+ */
+ 
+.actuateParameterContainer
+{
+	position: relative;
+	color: #000000;
+	border-width: 0;
+	border-style: none;
+	border-color: transparent;
+	
+}
+
+.actuateParameterContainer select,
+.actuateParameterContainer input.text
+{
+	font-style: normal;
+	font-size: 11pt;
+	font-family: 'Lato',Helvetica,Arial,sans-serif;
+
+	border: 2px solid #e1e1e1;
+
+	background-color: #FFFFFF;
+	text-align: left;
+	
+	text-decoration:none;
+	text-transform:none;
+	
+	padding: 0px;
+	margin: 0px;
+}
+
+.actuateParameterContainer .helpTextImg
+{
+	text-align: center;
+	vertical-align: middle;
+}
+	
+.actuateParameterContainer select,
+.actuateParameterContainer .inputTextColor,
+.actuateParameterContainer .controlList select,
+.actuateParameterContainer .operatorList select,
+.actuateParameterContainer .paramTable td,
+.actuateParameterContainer .paramTable td fieldset,
+.actuateParameterContainer .paramTable td b,
+.actuateParameterContainer .navSelector a,
+.actuateParameterContainer .navSelector img,
+.actuateParameterContainer .monthDays,
+.actuateParameterContainer .monthDays td,
+{
+	color: #000000;
+	text-decoration:none;
+	text-transform:none;
+}
+
+.progress_animation,
+.progress_animation img,
+.actuateParameterContainer .paramTable td,
+.actuateParameterContainer .paramTable td fieldset,
+.actuateParameterContainer .paramTable td b,
+.actuateParameterContainer .paramTable td img,
+.actuateParameterContainer .controlListAllowNew div,
+.actuateParameterContainer div.dateContainer,
+.actuateParameterContainer .navSelector,
+.actuateParameterContainer .navSelector a,
+.actuateParameterContainer .navSelector img,
+.actuateParameterContainer .monthDays,
+.actuateParameterContainer .monthDays td,
+.actuateParameterContainer input.checkbox,
+.actuateParameterContainer input.radio
+{
+	border-width: 0;
+	border-style: none;
+	border-color: transparent;
+}
+
+.dateContainer
+{
+	border: 1px solid rgba(0,0,0,0.2) !important;
+	border-radius: 4px;
+	background: #ffffff none !important;
+	padding: 0;
+}
+
+.PopUpCalendar .bg
+{
+	background: transparent url(../iportal/jsapi/actuate/widget/images/shared/hd-sprite.gif) repeat-x 0 -83px!important;
+}
+
+.PopUpCalendar .bg_header
+{
+	background: transparent url(../iportal/jsapi/actuate/widget/images/shared/glass-bg.gif) repeat !important;
+}
+
+.PopUpCalendar select
+{
+	margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+.PopUpCalendar .bg_header td
+{
+	font-family:'Lato',tahoma,verdana,arial,'Lato',Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	width: 24px;
+}
+
+
+/* The autosuggest dropdown container */
+ .auto_suggestion_container
+ {
+ 	position: absolute;
+ 	display: none;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	z-index: 3;
+ 	border: 1px solid #000000;
+ 	background: white;
+ 	background-color: white;
+ 	text-decoration:none;
+	text-transform:none;
+}
+
+.auto_suggestion_container li,
+.auto_suggestion_container ul,
+.auto_suggestion_container a,
+.auto_suggestion_container img
+{
+	color: #000000;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ .auto_suggestion_container table
+ {
+ 	width: 100%;
+ }
+ 
+ .auto_suggestion_container .listcontent
+ {
+	cursor: pointer;
+	width: 98%;
+ 	overflow: hidden;
+  }
+ 
+ .auto_suggestion_container .navigation,
+ .auto_suggestion_container .navigation img
+ {
+	background: white none repeat scroll 0 0;
+	border:0; 	
+ 	text-decoration: none;
+	color: white;
+ }
+ 
+ .actuateParameterContainer .navigation .up
+ {
+ 	margin-bottom:5px;
+ }
+
+ .auto_suggestion_container li,
+ .auto_suggestion_container ul,
+ .auto_suggestion_container a,
+ .auto_suggestion_container img
+ {
+	border-style: none;
+	border-color: transparent;
+	background: white none repeat scroll 0 0;
+	 
+	font-style: normal;
+	font-size: 9pt;
+	font-family: 'Lato',Helvetica,Arial,sans-serif;
+ } 
+
+.auto_suggestion_container li
+ {
+	 text-align: left;
+	 display:list-item;
+ }
+ 
+ .auto_suggestion_container ul
+ {
+ 	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	list-style-image:none;
+	list-style-position:outside;
+ }
+
+ .auto_suggestion_container ul .hidden
+ {
+ 	visibility: hidden;
+ 	display: none;
+ }
+ 
+ .auto_suggestion_container a
+ {
+	text-decoration: none;
+ }
+
+ .auto_suggestion_container .selected,
+ .auto_suggestion_container .selected a
+ {
+	background: #333399 none repeat scroll 0 0;
+	color: #F0F3F9;
+ }
+ 
+ .progress_animation,
+ .progress_animation img
+ {
+	text-align:center;
+ }
+ 
+/*** Parameter styles ***/
+/* Table containing a group of parameters */
+.actuateParameterContainer .paramTable 
+{
+	font-style: normal;
+	font-size: 9pt;
+	font-family: 'Lato',Helvetica,Arial,sans-serif;
+	border-spacing: 0px 0px;
+	padding: 5px;
+	width: 100%;
+	/* Give the parameter component a zIndex stacking context */
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.actuateParameterContainer .paramTable td,
+.actuateParameterContainer .paramTable td fieldset
+{
+	font-style: normal;
+	font-size: 9pt;
+	font-family: 'Lato',Helvetica,Arial,sans-serif;
+	border-spacing: 0px 0px;
+}
+
+/* Each row of paramTable */
+.actuateParameterContainer .paramRow
+{
+	display: table-row;
+	width: 100%;
+}
+
+/* Cell containing parameter name */
+.actuateParameterContainer .paramDisplayName
+{
+	width: 30%;
+	display: table-cell;
+	text-align: left;
+	white-space: nowrap;
+	padding-left: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+/* Cell containing parameter group name */
+.actuateParameterContainer .groupDisplayName
+{
+	display: table-cell;
+	width: 30%;
+	text-align: left;
+	white-space: normal;
+	font-weight: bold;
+	color: #4c566c !important;
+}
+
+.actuateParameterContainer .paramInputSection *
+{
+	font-family: 'Lato',Helvetica,Arial,sans-serif;
+	font-weight: regular;
+	font-size: 9pt;
+	color: #395587;
+}
+
+.actuateParameterContainer .auto_suggestion_list,
+.actuateParameterContainer .controlList,
+.actuateParameterContainer .paramTextbox
+{
+	min-width:100px;
+}
+
+/* Cell containing following input controls
+   controlRadioButton 	- Radio buttons
+   controlCheckBox 	- Checkbox
+   controlList 		- Select box (dropdown list)
+   operatorList		- Select box (dropdown list)
+   controlListAllowNew 	- Combo box (editable dropdown list)
+   paramAdHoc 		- Textbox controls which can take adhoc parameters
+   paramCommon		- Anything else
+*/
+.actuateParameterContainer .controlRadioButton,
+.actuateParameterContainer .controlCheckBox,
+.actuateParameterContainer .controlList,
+.actuateParameterContainer .operatorList
+.actuateParameterContainer .controlListAllowNew,
+.actuateParameterContainer .paramAdHoc,
+.actuateParameterContainer .paramCommon
+{
+	text-align: left;
+	width: 50%;
+}
+
+.actuateParameterContainer .ParamHintCommonGray
+{	
+	color: gray;
+}
+
+.actuateParameterContainer .highlightRequiredParameters
+{	
+	border-style    : solid !important;
+    border-width    : 1px !important;
+    border-color    : red !important;
+}
+
+.actuateParameterContainer .paramRequiredText
+{	
+	text-align: left;
+	width: 2%;
+	white-space: nowrap;
+}
+.actuateParameterContainer .paramRequiredTextSpace
+{	
+	width: 18%;
+	white-space: nowrap;
+}
+
+.actuateParameterContainer .controlNullValueButton
+{
+	text-align: left;
+	white-space:nowrap;
+	width: 18%;
+}
+/* Styles for the fieldset enclosing radio buttons */
+.actuateParameterContainer .controlRadioFieldSet
+{
+	border: none;
+	padding-left: 0px;
+	margin-left: 0px;
+	line-height: 20px;
+}
+
+.actuateParameterContainer .controlRadioFieldSet .radioField
+{
+	vertical-align: top;
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	margin-top:  0px;
+	height: 20px;
+}
+
+.actuateParameterContainer .controlRadioFieldSet .radioFieldIE
+{
+	vertical-align: middle;
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	margin-top:  0px;
+	height: 20px;
+}
+
+.actuateParameterContainer .controlRadioFieldSet .radioFieldMobile
+{
+	vertical-align: middle;
+	padding-left: 0px;
+	margin-left: 0px;
+	height: 20px;
+}
+
+/* Cell containing parameter notes i.e. 'required', 'dateOnly' info */
+.actuateParameterContainer .paramNotesLabel
+{
+	font-size: xx-small;
+	width: 20%;
+	white-space: normal;
+}
+
+/* Cell containing parameter notes i.e. 'required', 'dateOnly' info. 
+** It is used when parameter is "nullable". 
+*/
+.actuateParameterContainer .paramNotesLabelNarrow
+{
+	font-size: xx-small;
+	width: 10%;
+	white-space: nowrap;
+}
+/* Used to add blank space. */
+.actuateParameterContainer .paramPreLabel
+{
+	white-space: pre;
+}
+
+/*** Navigation bar styles ***/
+.actuateParameterContainer .paramNavBar
+{
+	text-align: center;
+	margin-left:auto; 
+	margin-right:auto;
+}
+.actuateParameterContainer .imageLink_on
+{
+	cursor: pointer;
+}
+.actuateParameterContainer .imageLink_off
+{
+	cursor: default;
+}
+
+/*** Internal styles ***/
+.actuateParameterContainer .comboTextBox
+{
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: none;
+}
+/* Textbox parameter control */
+.actuateParameterContainer .paramTextbox
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 98%; /* Need to leave some room for border, so set to 98% */
+}
+
+
+/* Textbox parameter control */
+.actuateParameterContainer .paramTextHint
+{
+	color: 'gray';
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 98%; /* Need to leave some room for border, so set to 98% */
+}
+/* Absolutely positioned elements need a 'context' to position themselves in. 
+ * This is a simple class to provide such a context 
+ */
+.actuateParameterContainer div.relativeWrapper,
+.relativeWrapper_auto_suggestion_list
+{
+	border-style: none;
+	border-color: transparent;
+	
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+relativeWrapper_auto_suggestion_list
+{
+	z-index: 10;
+}
+
+/* 
+	Calendar control styles 
+*/
+/* Root container for date control */
+.actuateParameterContainer div.dateContainer
+{
+	position: relative;
+	z-index: 10; 
+}
+
+.actuateParameterContainer .PopUpCalendar
+{
+	border-color:gray; 
+	border-width:1px;
+	border-style:solid; 
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	visibility: hidden; 
+	background-color: #FFFFFF;
+	z-index: 2;
+}
+
+.actuateParameterContainer .navSelector
+{
+	overflow: visible;
+	visibility:inherit;
+}
+
+.actuateParameterContainer .monthDays
+{
+	width:200px;  
+	overflow: visible; 
+	visibility: hidden; 
+	background-color: #FFFFFF; 
+}
+
+/*** AdHoc menu styles ***/
+/* Div containing the adHoc menu */
+.actuateParameterContainer td.adHocCell img
+{
+	background: white none repeat scroll 0 0;
+ 	text-decoration: none;
+ 	border: 0;
+}
+
+.actuateParameterContainer td.adHocCell div.adHocDiv
+{
+	position: relative; /* This is relative, so that adHocMenu can be absolute */
+	z-index: 3;
+}
+
+.actuateParameterContainer td.adHocCell:hover div.adHocDiv
+{
+	border: 0;
+}
+/* Table for adhoc menu */
+.actuateParameterContainer div.adHocDiv table.adHocMenu
+{
+	position: absolute; /* Place adHocMenu right beside the adHocArrow image */
+	left: 12px;
+	top: -18px;
+	background-color: #CCCCCC;
+	padding: 2px;
+}
+/* Each adHoc option */
+.actuateParameterContainer table.adHocMenu td.adHocItem
+{
+	background-color: #CCCCCC;
+	white-space:nowrap; /* Either do this, or set a fixed width */
+}
+.actuateParameterContainer table.adHocMenu td.adHocItem:hover
+{
+	background-color: gray;
+	cursor: pointer;
+}
+
+/* Container for the group parameters in the 'collapsible' layout*/
+.actuateCollapsibleContainer
+{
+	color: #000000;
+	border-width: 0;
+	border-style: none;
+	border-color: transparent;
+	width: 100%;
+	padding-left: 10px;
+}
+
+/* override the style in yggdrasil.css TED 66006*/
+.ac .actuateButtonContainer .btn {
+  background-image: none;
+}
+
+.ac .actuateButtonContainer .btn.disabled:hover,
+.ac .actuateButtonContainer .btn[disabled]:hover {
+  background-image: none;
+}

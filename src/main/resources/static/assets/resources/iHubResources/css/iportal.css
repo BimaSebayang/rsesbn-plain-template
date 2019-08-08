@@ -1,0 +1,275 @@
+/* Good to have global classes
+--------------------------------*/
+body {
+	text-align: 			center;
+}
+
+#bannerarea td
+{
+	background-image: 		url(../images/login_top_bg.png);
+}
+
+.bannerlogoarea {
+	padding-left: 			23px;
+}
+
+.floatright {
+	float: 					right;
+	display:				inline; /*to avoid IE double margin bug*/
+}
+
+.floatleft {
+	float: 					left;
+	display:				inline; /*to avoid IE double margin bug*/
+}
+
+.alignright {
+	text-align:				right;
+}
+
+#iPortalContainer * {
+	margin: 				0;
+	padding:				0;
+}
+
+#iPortalContainer table {
+	border-collapse: 		collapse;
+	border-spacing: 		0px;
+}
+
+#iPortalContainer #actuatesite {
+	height: 				192px;
+}
+
+#iPortalContainer {
+	/* background-image: 		url(../images/login_bg.png); */
+	background-repeat: 		repeat-x;
+	padding-top:			134px;
+	height: 				1066px;
+}
+
+
+#iPortalContainer img {
+	border:					0;
+}
+
+#iPortalContainer  #innerWrapper {
+	margin:					auto;	
+	height:					394px;
+	width:					804px;
+}
+
+#topGradient {
+	width:					100%;
+	height:					9px;
+	background-image:		url(../images/top_middle_area.png);
+	background-repeat:		repeat-x;
+}
+
+#bottomGradient {
+	width:					100%;
+	height:					9px;
+	background-image:		url(../images/bottom_middle_area.png);
+	background-repeat: 		repeat-x;
+}
+
+#iPortalContainer #outerTable {
+	height:					394px !important;
+}
+
+#iPortalContainer a {
+	color:					#003063;
+}
+
+#iPortalContainer h1 {
+	color:					#003063;
+	font-size:				14px;
+	float:					left;
+	display:				inline;
+	line-height:			22px;
+}
+
+#iPortalContainer #tellColleague {
+	font-size:				12px;
+	font-weight:			bold;
+	float:					right;
+	display:				inline;
+	padding:				0 0 6px 30px;
+	line-height:			22px;
+	background:				transparent url('../images/designelements/icon_tellcolleague.gif') no-repeat left top;
+}
+
+#iPortalContainer div.pathway {
+	text-align:				center;
+	height:					128px;
+/*	background-color:		rgb(231,229,229); */
+}
+#iPortalContainer div.left {
+	float:					left;
+	display:				inline;
+	width:					50%;
+	height:					180px;
+}
+#iPortalContainer div.right {
+	float:					right;
+	display:				inline;
+	width:					49%;
+}
+
+#iPortalContainer div.pathway h2 {
+	color:					#528cc5;
+	font-size:				22px;
+	margin-bottom:			10px;
+	padding:				0 10px;
+}
+
+#iPortalContainer div.pathway h2 img {
+	margin-bottom:			-7px;
+}
+
+#iPortalContainer div.pathway p {
+	color:					#003063;
+	font-size:				12px;
+	line-height:			17px;
+	margin-bottom:			16px;
+	padding:				0 22px;
+}
+
+#iPortalContainer div.single p {
+	padding:				0 110px !important;
+}
+
+#iPortalContainer div.pathway input.type_btn {
+	font-size:				12px;
+}
+
+#iPortalContainer div.box {
+	width:					33.3%;
+	float:					left;
+	display:				inline;
+/*	background-color:		#fcfcfc; */
+}
+
+#iPortalContainer div.box h3 {
+	color:					#fff;
+	background-color:		#528cc5;
+	font-size:				10px;
+	border-left:			1px solid #21558a;
+	text-transform:			uppercase;
+	padding:				5px 0 5px 10px;
+}
+
+#iPortalContainer div.box div.content {
+	border-left:			1px solid #d9d9d9;
+	border-bottom:			1px solid #d9d9d9;
+	padding:				8px 0 0 8px;
+	height:					149px;
+}
+#iPortalContainer div.first h3 {
+	border-left:			0 !important;
+}
+#iPortalContainer div.last div.content {
+	border-right:			1px solid #d9d9d9;
+}
+
+#iPortalContainer div.box div.content ul {
+	list-style-type:		none;
+}
+
+#iPortalContainer div.box div.content ul li {
+	font-size:				10px;
+	color:					#003063;
+	margin:					0 0 10px 0;
+	padding:				0 10px 0 7px;
+	line-height:			14px;
+	background:				transparent url('../images/designelements/bg_li_arrow.gif') no-repeat left 4px;
+}
+
+#iPortalContainer div.last div.content img {
+	border:					1px solid #d3d9db;
+}
+
+#iPortalContainer div.image_style{
+	float:					left;
+	padding:				10px;
+	margin-right:			40px;
+}
+
+#iPortalContainer div.image_title{	
+	font-size:				22px;
+	color:					#666666;
+	float:					left;
+	text-align:				left;
+	padding:				13px 0 0 15px;
+}
+
+#iPortalContainer div.description{
+	font-size:				14px; 
+	font-weight:			normal; 
+	color:					#666666;
+	text-align:				left;
+	padding:				20px;
+	
+}
+
+#iPortalContainer div.button {
+	float:					right;
+	height:					29px;
+	margin-right:			237px;
+	padding-right:			3cm;
+}
+#iPortalContainer div.button_left{
+	float:					left; 
+	margin:					0;
+	padding:				0;
+}
+
+#iPortalContainer div.button_middle{
+	float:					left; 
+	text-align:				center; 
+	height:					25px; 
+	width:					81px; /*  7px*2(left+right) + 81px(middle) = 95px(mockup requirement) */
+	margin:					0; 
+	padding-top:			3px; 
+	background:				url('../images/button-bg-on.png') repeat-x;
+	dispaly:				block; 
+}
+
+#iPortalContainer div.button_middle a{
+	font-size:				13px; 
+	color:					#FFFFFF; 
+	cursor:					pointer;
+	dispaly:				block;
+}
+
+#iPortalContainer div.button_right{
+	float:					left; 
+	margin:					0; 
+	padding:				0;
+}
+
+ /* clearfix (already applied on #body)
+--------------------------------*/
+.clearfix {
+	height: 				54px ;
+	border:					1px solid rgb(200,198,198);
+/*	background-image:		url(../images/login_welcome_blueBG.png); */
+	background-repeat: 		repeat-x;
+}
+
+.clearfix:after,#body:after {
+    content:				"."; 
+    display:				block; 
+    height:					0; 
+    clear:					both; 
+    visibility:				hidden;
+}
+
+.clearfix,#body {
+	display:				inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix, * html #body {height: 1%;}
+.clearfix, #body {display: block;}
+/* End hide from IE-mac */

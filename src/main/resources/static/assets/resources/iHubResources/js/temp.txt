@@ -1,0 +1,25 @@
+		if( wd == null))
+			dsbWd="1240";
+		else	
+			dsbWd=wd;
+		if( ht == null)
+			dsbHt="1400";
+		else	
+			dsbHt=ht;
+		if(edit==null)
+			editDashboard="false";
+		else	
+			editDashboard=edit;
+			
+		if(showTab==null)
+			showTabNav="true";
+		else	
+			showTabNav=showTab;
+					if(editDashboard=="false")
+			dash.setIsDesigner(false); 
+		else	
+			dash.setIsDesigner(true); 
+		if(showTabNav=="false")
+			dash.showTabNavigation(false);
+		else
+			dash.showTabNavigation(true);

@@ -1,0 +1,41 @@
+{
+    "mainMenu": [
+		{
+			"pageName": "VIVA Home",
+			"pageURL": "dashboards.jsp?dsbName=Viva%20Energy&wd=1259&ht=786",
+			"subMenu": ""
+        },
+		{
+			"pageName": "Customer",
+			"pageURL": "",
+			"subMenu": [
+                {
+                    "pageName": "Customer Dashboard",
+                    "pageURL": "dashboards.jsp?dsbName=Viva%20Customer&wd=1265&ht=1800"
+                },
+                {
+                    "pageName": "Cost Center Summary",
+                    "pageURL": "reports.jsp?rptName=Cost%20Centre%20Summary"
+                }
+            ]
+        },
+        {
+            "pageName": "BIRT Options",
+            "pageURL": "",
+            "subMenu": [
+                {
+                    "pageName": "BIRT Report Studio",
+                    "pageURL": "iHubComponent.jsp?iHubComp=BRS"
+                },
+				{
+                    "pageName": "BIRT Dashboard",
+                    "pageURL": "iHubComponent.jsp?iHubComp=DSB"
+                },
+				{
+                    "pageName": "BIRT Analytics",
+                    "pageURL": "report.jsp?rptName=test"
+                }
+            ]
+        }
+	]
+}

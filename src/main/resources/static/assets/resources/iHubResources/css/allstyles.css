@@ -1,0 +1,1447 @@
+/*
+	The default body layout for all the pages.
+*/
+BODY
+{
+	margin:				0px;
+	padding:			0px;
+}
+
+form
+{
+	margin:				0px;
+	padding:			0px;
+}
+/*
+	The different styles for the banner
+	banner - banner background and the default font styles
+	bannerLabel - The default font style for the lables in the banner like ""
+	bannerValue - The default font style for the values displayed in the banner like ""
+	bannerLink - The default style for the hyperlinks in the banner
+*/
+.banner, .bannerLabel, .bannerValue, .bannerLink, .bannertextarea
+{
+	font-style: 		normal;
+	text-align: 		left;
+}
+
+
+/*
+	Top Banner Styles
+*/
+.topBanner {
+	height:				40px;
+	width: 				100%;
+	border:				0px;
+	margin:				0px;
+	border-style: 		none;
+}
+
+.bannerLogoArea {
+	width:				0px;
+	padding:			0px 32px 3px 23px;
+}
+
+.bannerTextArea {
+	text-align: 		left;
+	white-space:		nowrap;
+}
+
+.bannerIconArea {
+	width:				18px;
+	align:				middle;
+	nowrap:				nowrap;
+	border-style:		none;
+	padding-left:		10px;
+}
+
+#logoutElement {
+	padding-right:		8px;
+}
+
+
+.bannerIconAreaSpace {
+	width:				8px;
+}
+
+.bannerImage {
+	border:				0px;
+	border-color:		none;
+}
+
+.bannerImageLink {
+}
+
+.bannerGlueArea {
+	width: 				100%;
+}
+
+#userElement {
+	width:				168px;
+	text-align:			center;
+}
+
+
+#licenseElement {
+	width:				149px;
+	text-align:			center;
+}
+
+
+.topBannerDivider {
+	width:				0px;
+	height:				40px;
+	padding-left:		2px;
+}
+
+#userElement, #licenseElement {
+	padding:	0px 10px;
+}
+
+/*
+	Additional styles that apply to the labels displayed in the banner.
+*/
+.bannerLabel
+{
+}
+
+/*
+	Additional styles that apply to the values displayed in the banner
+*/
+.bannerValue
+{
+}
+
+/*
+	The style for the hyperlink in the banner when the user moves the mouse over it.
+*/
+A:HOVER.bannerLink
+{
+}
+
+/*
+	Styles for the sidebar
+	sidebar -  The style for the sidebar panel
+	sidebarSelected - The style of the selected sidebar item
+	sidebarLine - The style of the hyperlinks inside the sidebar
+	A:HOVER.sidebarLink -  The style of the sidebar link when the user moves the mouse over it.
+	sidebarLinkSelected - The style of the hyperlink for a selected sidebar item.
+	A:HOVER.sidebarLinkSelected - The style of the hyperlink for a selected sidebar item when the user moves the mouse over it.
+	sidebarUnselected - The style for the sidebar items that are not currently selected.
+*/
+.sidebar, .sidebarSelected, .sidebarLink, A:HOVER.sidebarLink, .sidebarLinkSelected, A:HOVER.sidebarLinkSelected, .sidebarUnselected
+{
+	font-style: 		normal;
+}
+
+.sidebar {
+	background-attachment: fixed;
+}
+
+/*
+	Additional styles for the selected sidebar item
+*/
+.sidebarSelected
+{
+	padding: 			2px;
+	margin: 			1px;
+	white-space: 		nowrap;
+}
+
+.sidebarUnselected
+{
+	padding: 			2px;
+	margin: 			1px;
+	white-space: 		nowrap;
+}
+
+.sidebarSelected td
+{
+	vertical-align: 	middle;
+}
+
+
+.sidebarUnselected td
+{
+	vertical-align: 	middle;
+}
+
+
+.sidebarLink, A:HOVER.sidebarLink, .sidebarLinkSelected, A:HOVER.sidebarLinkSelected
+{
+	font-weight: 		bold;
+	margin: 			0px;
+}
+
+A:HOVER.sidebarLink
+{
+}
+
+.sidebarLinkSelected
+{
+	vertical-align: 	middle;
+}
+
+A:HOVER.sidebarLinkSelected
+{
+}
+
+
+/*
+	Content page styles
+*/
+/*
+	The layout for the content pages that display the lists
+*/
+.content
+{
+	padding-left: 		5pt;
+	padding-top: 		3pt;
+	padding-right: 		3pt;
+}
+
+/*
+	Styles for all the contents in the pages
+	The TD has been generatlized since most of the styles are the same and a style sheet doesn't need to be applied for it.
+*/
+.label, .boldlabel, .alertText, .disabledhyperlink, .breadcrumb,.toolbartext,.toolbarboldtext,.toolbarlink, .hyperlink, .titlebar, A:HOVER.hyperlink, .filterLabel, .command, .inputControlStretch, .rowStyle1, .rowStyle2, columnHeader, .treeControlSelectedItem, .treeControlItem
+{
+	font-style: 		normal;
+}
+
+.redlabel
+{
+	float:				left;
+	font-style:			normal;
+}
+
+#iPadminContainer h1 
+{
+	display:			inline;
+	float:				left;
+	line-height:		22px;
+}
+
+/*
+	Style for breadcrumb hyperlinks and text and toolbar
+*/
+
+.breadcrumb,.toolbartext,.toolbarboldtext,.toolbarlink
+{
+}
+
+.toolbarboldtext
+{
+	font-weight:		bold;
+}
+
+body, .menuLink, .menuLinkSelected,.sidebar table,.panel, .newPanel, .newPanel legend, .categoryWrapper, .detailWrapper, .mobileSubscriptionWrapper
+{
+	font-style: 	normal;
+}
+
+/* Color for input and select controls */
+
+INPUT,OPTION
+{
+}
+
+/*TED 17614 -- Safari 4 / Firefox 3.63 on windows XP and Vista will display black characters for disabled button, add this to avoid*/
+input:disabled{
+        border:solid 1px #888888;
+    }
+
+/*
+	Additional styles needed for the text when representing a disabled hyperlink
+	This is used for displaying the file name in the job notice pages when the job fails or if the file is not available on the server.
+*/
+.disabledhyperlink
+{
+	text-decoration: 	underline;
+	color:#D3D3D3;
+}
+
+/*
+	Overridden styles for the labels in the filter panel
+*/
+.filterLabel
+{
+}
+
+.filterCheckbox {
+	padding-left:		9px;
+	padding-right:		4px;
+}
+
+/*
+	Text that is used for displaying alerts to the user.
+	Currently used in the login page when the user logs out or if the volume names are not available
+*/
+.alertText
+{
+	font-weight: 		bold;
+	text-align: 		left;
+}
+
+/*
+	Presently used to set the width of input controls in the login page
+*/
+.inputControl
+{
+	width: 				320pt;
+	font-weight: 		normal;
+}
+
+/*
+	Used to set the styles of input controls in the query pages at present
+*/
+.inputControlStretch
+{
+	width: 				100%;
+	border-style:		inset none none inset;
+	border-width:		1px 0px 0px 1px;
+}
+
+/*
+	This is used as the background for the filters, query and any page whose content is displayed in a bordered box
+	Also used for the job headers
+*/
+.panel
+{
+	border: 			1px solid #b5b29c;
+	padding: 			4px;
+}
+
+.popupMenu, .popupMenuItem, .popupMenuItemSelected
+{
+	border: 			none;
+	padding: 			0px;
+	font-style: 		normal;
+}
+.popupMenu
+{
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	visibility: 		hidden;
+	overflow: 			hidden;
+	position: 			absolute;
+	top: 				0px;
+	left: 				100px;	
+	padding : 3px 0;
+	background-color: #FFFFFF;
+}
+
+.popupMenuItemSelected
+{
+	background-color: 	#BAC9CE;	
+	cursor: 			pointer;	
+	overflow: 			hidden;	
+}
+
+.popupMenuItem
+{	
+	padding: 			2px;
+	margin: 10px;
+}
+
+.popupMenuSeparator
+{
+	background-color: 	#303030;
+	margin: 			2px;
+	border-radius:		10px;
+}
+
+
+.popupMenuSelection
+{
+}
+
+
+/*
+	rowstyles for alternating colors in the list view
+*/
+.rowStyle1
+{
+	/* background-color: 	White; */
+}
+
+.rowStyle2
+{
+	/* background-color: 	#F0F4F9; */
+}
+
+/*
+	Style for the column headers in the list view and for the category names in the categories view
+	titlebar - applies to categories view titles
+*/
+.titlebar
+{
+	height:				24px;
+	font-weight: 		bold;
+	white-space: nowrap;
+	padding-right : 10px;
+	font-family: 'Lato' !important;
+}
+
+.groupBox
+{
+	border-width: 		1px;
+	border-style: 		groove;
+	padding: 			10px;
+}
+
+.columnHeader
+{
+	font-weight: 		bold;
+}
+
+/*
+	Additional style for any lable that is to be displayed in bold
+*/
+.boldlabel
+{
+	font-weight: 		bold;
+}
+
+/*
+	Styles for hyperlinks in the list pages and for breadcrumb hyperlinks.
+*/
+.hyperlink, .breadcrumb,.toolbarlink
+{
+}
+
+/*
+	this style is used for the hyperlinks in the list pages when the user moves the mouse over them
+*/
+A:HOVER.hyperlink
+{
+}
+
+/* Tabs */
+.leftCellInactiveTab {
+	/*background-image:	url(../images/tabs/tab-splitter.png);*/
+}
+
+.rightCellInactiveTab
+{
+	/*background-image:	url(../images/tabs/tab-splitter.png);*/
+}
+
+.rightCellActiveTab
+{
+	/*background-image:	url(../images/tabs/tab-background-gradient-right.png);*/
+}
+
+.leftCellActiveTab
+{
+	/*background-image:	url(../images/tabs/tab-background-gradient-left.png);*/
+}
+
+.newCellActiveTab
+{
+	font-weight: 		bold;
+	text-align: 		center;
+	text-decoration: 	none;
+	padding-left: 		10px;
+	padding-right: 		10px;
+	height: 			27px;
+	border-right:		1px solid #e1e1e1 !important;
+}
+
+.newCellInActiveTab
+{
+	font-weight: 		bold;
+	text-align: 		center;
+	text-decoration: 	none;
+	padding-left: 		10px;
+	padding-right: 		10px;
+	height: 			27px;
+	border-right:		1px solid #e1e1e1 !important;
+}
+
+.tabRemainder {
+	/* background-image:	url(../images/tabs/tab-background-inactive.png); */
+}
+
+.newCellInActiveTab + .leftCellActiveTab + .newCellActiveTab {
+	border-left:		0px;
+}
+
+A:LINK.tabLink, A:HOVER.tabLink, A:visited.tabLink
+{
+/*	font-weight: 		bold;*/
+	text-decoration: 	none;
+}
+
+A:LINK.tabLinkDisabled
+{
+	font-weight: 		bold;
+	text-decoration: 	none;
+}
+
+A:HOVER.tabLink
+{
+}
+
+.tabLinkSelected
+{
+	font-weight: 		bold;
+	text-decoration:	none;
+	font-color:			#2998FB !important;
+}
+
+
+/*
+	Viewer Toolbar (viewnavigation, searchtoolbar, searchframe
+ */
+
+/* font used in viewing search results */
+.searchresultlink
+{
+}
+
+.LinkOff
+{
+	color: 				white;
+}
+
+.LinkOver
+{
+	color: 				red;
+}
+
+.LinkDisable
+{
+}
+
+.navbar
+{
+}
+
+.searchPanel
+{
+}
+
+.searchHeader
+{
+	font-weight: 		bold;
+	text-decoration: 	underline;
+}
+
+.searchContent
+{
+}
+
+/*
+	Viewer Download Page (viewer/saveas)
+ */
+.title
+{
+	margin-top: 		10;
+	font-weight: 		bold;
+}
+.filterGray
+{
+	height: 			32;
+	vertical-align: 	middle;
+}
+
+
+
+/*
+Calendar styles
+*/
+
+#fntCalendarDayOfMonth
+{
+}
+.ac select.fntCalendarMonth,
+.fntCalendarMonth
+{
+	width: auto;
+	min-width: 0px;
+}
+.ac select.fntCalendarYear,
+.fntCalendarYear
+{
+	width: auto;
+	min-width: 0px;
+}
+#fntCalendarDayOfWeek
+{
+	font-weight: 		bold;
+}
+
+
+/*
+	In options page
+*/
+.upperEdge
+{
+	border-top: 		1px solid #b5b29c;
+}
+
+
+/* Table Parameter editor */
+TH.tableParameterHeader
+{
+	vertical-align: 	middle;
+	font-style: 		bold;
+	font-variant: 		normal;
+	text-align: 		center;
+}
+
+
+TD.tableParameterButtonPanel
+{
+	vertical-align: 	middle;
+	font-style: 		normal;
+	font-variant: 		normal;
+	text-align: 		left;
+}
+
+TH.tableParameterColumnHeader
+{
+	vertical-align: 	middle;
+	font-style: 		bold;
+	font-variant: 		normal;
+	text-align: 		center;
+}
+
+TD.tableParameterRows
+{
+	vertical-align: 	middle;
+	font-style: 		normal;
+	font-variant: 		normal;
+	text-align: 		left;
+}
+
+TD.tableRowColumnName
+{
+	vertical-align: 	middle;
+	font-style: 		bold;
+	font-variant: 		normal;
+	text-align: 		left;
+}
+
+.treeControl
+{
+	border-width: 		3px;
+	border-style: 		groove;
+	padding: 			3px;
+	width: 				100%;
+	height: 			230px;
+	overflow: 			auto;
+	display: 			block;
+}
+
+.treeControlItem
+{
+	text-decoration: 	none;
+	cursor: 			default;
+	padding: 			0px;
+	margin: 			0px;
+}
+
+
+.treeControlSelectedItem
+{
+	cursor: 			default;
+	text-decoration: 	none;
+	padding: 			0px;
+	margin: 			0px;
+}
+
+/*
+ *	For Pluto integration
+ */
+.myPage
+{
+	border: 			1px solid #b5b29c;
+	padding: 			4px;
+}
+
+.myPageLink
+{
+	text-decoration:	none;
+}
+
+.portletWindowTitle
+{
+}
+
+.portletWindow
+{
+	border-style: 		solid;
+	border-width: 		1px;
+	border-color: 		#b5b29c;
+}
+
+.listFrm
+{
+	border-style:		solid;
+	border-width:		1px;
+}
+
+.hiddenListFrm
+{
+	border-style:		solid;
+	border-width:		1px;
+	display:			none;
+}
+
+.hiddenElement
+{
+	display:			none;
+}
+
+.currentLink
+{
+	text-decoration:	none;
+	cursor:				default;
+}
+
+.nonCurrentLink
+{
+	text-decoration:	underline;
+}
+
+.manageMyPagesLink
+{
+	text-decoration:	underline;
+}
+
+.innerBanner {
+	height:				37px;
+	border:				0px;
+	margin:				0px;
+	border-spacing:		0px;
+	border-collapse:	collapse;
+	cell-spacing:		0px;
+	cell-padding:		0px;
+}
+
+.allBreadcrumbs {
+	height:				60px;
+	vertical-align:		top;	
+}
+
+.breadcrumbs {
+	height:				20px;
+	margin-top:			10px;
+	margin-bottom:		9px;	
+}
+
+#innerTable {
+	height: 35px;
+}
+
+.breadcrumb img{
+	border:none;
+	margin:none;
+}
+
+#innerBannerGlueArea {
+	width:				100%;
+}
+
+#innerBannerMiddle {
+	width:				100%;
+	border-top:			1px solid #DDDDDD;
+	border-bottom:		1px solid #DDDDDD !important;
+	background-repeat:	repeat-x;
+}
+
+.innerBannerBorder {
+	width:				3px;
+}
+
+.innerBannerDividerShort {
+	padding-top:		3px;
+}
+
+.innerBannerMiddleElement {
+	padding-left:		9px;
+	padding-right:		9px;
+}
+
+#filterToolbar {
+	height:				20px;
+	
+}
+
+#myFolderElement {
+	padding-left:		7px;
+	padding-right:		10px;
+}
+
+.breadCrumb_Button
+{
+	padding-right:		5px;	
+}
+
+.fileFolderListing {
+	width:				100%;
+	font-size : 14px;
+}
+
+.categoryWrapper .label {
+	height:				24px;	
+}
+.mobileSubscriptionWrapper .label {
+	height:				24px;
+	padding-right:      10px;
+}
+.rowStyle1 {
+}
+
+.rowStyle2 {
+}
+
+.fileFolderListing {
+	width:				80px;
+}
+
+.labelIcons {
+	width: 150px;
+	padding-right: 15;
+}
+
+.fileFolderListing .label a.hyperlink {
+	text-decoration:	none;
+}
+
+.mobileSubscriptionWrapper {
+	border:				1px;
+	border-style:		solid;
+	border-color:		rgb(209,209,209);
+}
+
+.fileListSplitter, .fileListSplitter img{
+	width:				100% !important;
+	height:				2px !important;
+	padding: 			4px;
+}
+
+.categorySplitter {
+	height:				24px;
+}
+
+.fileFolderListing .folderListingArea {
+	height:				24px;
+}
+
+.fileFolderListing .folderListingArea a.hyperlink {
+	text-decoration:	none !important;
+}
+
+.innerSpring {
+	height:				100%;
+}
+
+.fileUploadTable{
+	padding : 			10px;
+}
+
+.fileUploadTable td {
+	padding-top:		4px;
+}
+
+#tblActionButtons td {
+	padding-top:		0px;
+}
+
+.classicSidebar {
+}
+
+.classicSidebar a {
+	padding-left:		2px;
+	text-decoration: 	none;
+}
+
+#sidebar_border_top {
+	height:				3px;
+}
+
+#sidebarEntries {
+	height:				84px;
+	text-align:			left;
+	border-left:		1px solid #DDDDDD;
+	border-right:		1px solid #DDDDDD;
+	border-bottom:		1px solid #DDDDDD;
+}
+
+#sidebarEntries #entry1 {
+	border-bottom:		1px solid rgb(190,195,200);
+}
+
+#sidebarEntries #entry2 {
+	border-top:			1px solid rgb(242,246,251);
+	border-bottom:		1px solid rgb(190,195,200);
+}
+
+#sidebarEntries #entry3 {
+	border-bottom:		1px solid rgb(190,195,200);
+}
+
+#sidebarEntries #entry4 {
+	border-bottom:		1px solid rgb(190,195,200);
+}
+
+}
+
+.innerLeftGradient, .innerRightGradient {
+	width:				7px;
+}
+
+.innerTopGradient, .innerBottomGradient {
+	height:				7px;
+}
+
+.innerLeftGradientMiddle {
+	height:				100%;
+	background-image:	url(../images/wrappers/innerWrapper_gradient_left.png);
+	background-repeat:	repeat-y;
+}
+
+.innerRightGradientMiddle {
+	height:				100%;
+	background-image:	url(../images/wrappers/innerWrapper_gradient_right.png);
+	background-repeat:	repeat-y;
+}
+
+.innerTopGradient {
+	height:				7px;
+	background-image:	url(../images/wrappers/innerWrapper_gradient_top.png);
+	background-repeat:	repeat-x;
+}
+
+.innerBottomGradient {
+	height:				7px;
+	background-image: 	url(../images/wrappers/innerWrapper_gradient_bottom.png);
+	background-repeat:	repeat-x;
+}
+
+.innerTopLeftCorner, .innerTopRightCorner, .innerBottomLeftCorner, .innerBottomRightCorner {
+	width:				7px;
+	heigh:				7px;
+}
+
+.outerTable, .innerTable {
+	width:				100%;
+}
+
+.outerTable {
+	height:				100%;
+}
+
+.innerTable {
+	height:				100%;
+}
+
+/*
+	Information Console Button Control
+*/
+
+.ICButton_On, .ICButton_Off {
+	height:				29px;
+}
+
+.ICButton_Left_On, .ICButton_Left_Off, .ICButton_Left {
+	margin:				0;
+	padding:			0;
+}
+
+.ICButton_Right_On, .ICButton_Right_Off, .ICButton_Right {
+	margin:				0;
+	padding:			0;
+}
+
+.ICButton_On  .ICButton_Left {
+	width:				7px;
+	height:				25px;
+	background-image:	url(../images/button-left-on.png);
+	background-repeat:	no-repeat;
+	background-position:0px 2px;
+}
+
+.ICButton_On  .ICButton_Right {
+	width:				7px;
+	height:				25px;
+	background-image:	url(../images/button-right-on.png);
+	background-repeat:	no-repeat;
+	background-position:0px 2px;
+}
+
+.ICButton_Off  .ICButton_Left {
+	width:				7px;
+	height:				25px;
+	background-image:	url(../images/button-left-off.png);
+	background-repeat:	no-repeat;
+	background-position:0px 2px;
+}
+
+.ICButton_On  .mobile_button_right {
+	background-image:	url(../images/mobile/button-right-on.png) !important;
+	width:				8px !important;
+	height:				32px !important;
+	
+}
+
+.ICButton_On  .mobile_button_middle {
+	background-image:	url(../images/mobile/button-middle-on.png) !important;
+	height:				32px !important;
+}
+
+.ICButton_On  .mobile_button_left {
+	background-image:	url(../images/mobile/button-left-on.png) !important;
+	width:				8px !important;
+	height:				32px !important;
+}
+
+.ICButton_Off  .mobile_button_right {
+	background-image:	url(../images/mobile/button-right-off.png) !important;
+	width:				8px !important;
+	height:				32px !important;
+	
+}
+
+.ICButton_Off  .mobile_button_middle {
+	background-image:	url(../images/mobile/button-middle-off.png) !important;
+	height:				32px !important;
+}
+
+.ICButton_Off  .mobile_button_left {
+	background-image:	url(../images/mobile/button-left-off.png) !important;
+	width:				8px !important;
+	height:				32px !important;
+}
+
+.ICButton_Off  .ICButton_Right {
+	width:				7px;
+	height:				25px;
+	background-image:	url(../images/button-right-off.png);
+	background-repeat:	no-repeat;
+	background-position:0px 2px;
+}
+
+.ICButton_Middle_On, .ICButton_On .ICButton_Middle {
+	background-image:	url("../images/button-bg-on.png");
+	background-repeat: 	repeat-x;
+	background-position:0px 2px;
+	height:				25px; 
+	margin:				0;
+	text-align:			center;
+	padding-bottom:		3px;
+}
+
+.ICButton_Middle_Off, .ICButton_Off .ICButton_Middle {
+	background-image:	url("../images/button-bg-off.png");
+	background-repeat: 	repeat-x;
+	background-position:0px 2px;	
+	height:				25px;
+	margin:				0;
+	text-align:			center;
+	padding-bottom:		3px;
+}
+
+.ICButton_Middle_On input, .ICButton_Middle_Off input, .ICButton_Middle input {
+	background:			none;
+	border:				0;
+	color:				white;
+}
+
+.ICButton_Border_Image {
+	vertical-align:		bottom;
+}
+
+.NewRequestButton_Middle_On, .NewRequestButton_Middle_Off {
+	width:				auto !important;
+}
+
+.NewRequestButton_Middle_On input, .NewRequestButton_Middle_Off input {
+	width:				auto !important;
+}
+
+.filter {
+	height:				36px;
+	border-top:			none;
+	border-bottom:		1px solid rgb(217,217,217);
+	margin-bottom:		5px;
+}
+
+.schedule {
+	/*background-color:	rgb(241,241,241);*/
+}
+
+#general td, #accessRights td, #autoArchive td{
+	height:				24px;
+}
+
+
+#general, #accessRights, #autoArchive {
+	/* color:				rgb(102,102,102) !important; */
+}
+
+#pusher {
+	width:				55% !important;
+}
+
+.boldDescription {
+	font-weight:		bold;
+}
+
+.opList {
+	padding-right: 		13px;
+}
+
+.detailWrapper, .channelWrapper{
+	border-left:				1px solid rgb(209,209,209);
+	border-right:				1px solid rgb(209,209,209);
+}
+
+.detailWrapper .label, .channelWrapper td {
+	height:				24px;
+	padding-right:      10px;
+}
+
+.detailWrapper .label a, .channelWrapper a {
+	text-decoration:	none;
+}
+
+.channelWrapper td {
+	border-bottom:		1px solid rgb(218,218,218);
+}
+
+#jobSubmitSplitterTop, #jobSubmitSplitterBottom {
+	height:				2px;
+	background-image:	url(../images/splitter.png);
+}
+
+.jobSubmitStruts {
+	height:				5px;
+}
+
+#jobSubmit .label, #jobStatus td{
+}
+
+#jobSubmitTitle, #jobStatusTitle {
+}
+
+.JobStatusButton_Middle_On, .JobStatusButton_Middle_Off{
+	width:				77px !important;
+}
+
+.JobStatusButton_Middle_On input, .JobStatusButton_Middle_Off input{
+	width:				77px !important;
+}
+
+.jobStatusSplitter {
+	height:				2px !important;
+	background-image:	url(../images/splitter.png);
+}
+
+.jobStatusWrapper {
+	border:				1px solid rgb(218,218,218);
+}
+
+.jobStatusWrapper td {
+	height:				24px;
+	/*background-color:	rgb(241,241,241);*/
+}
+
+#jobStatus .label {
+	padding-left:		5px;
+	font-weight:		bold;
+}
+
+.tab-gradient-bottom {
+	height:				6px;
+	background-image:	url(../images/tabs/tab-gradient-bottom.png);
+}
+
+.tabHelpArea {
+	text-align:			right;
+	padding-right:		5px;
+}
+
+.newPanel {
+	padding:			20px 4px 4px 4px;
+	border-width:		0px 1px 1px 1px;
+	border-color:		rgb(208,208,208);
+	border-style:		none solid solid solid;
+}
+
+.ICFilterButton_Middle {
+	padding-left:		10px;
+	padding-right:		10px;
+}
+
+.shareSelect ,.treeControl{
+	width:				280px;
+	height:				234px;
+	border-color:		#CCCCCC;
+	border-style:		inset none none inset;
+	border-width:		1px 0px 0px 1px;
+}
+
+.wideInput {
+	width:				100%;
+}
+
+#shareDirectArrowRight, .createQueryArrowRight, 
+#shareDirectArrowLeft, .createQueryArrowLeft,
+.createQueryDoubleArrowRight, .createQueryDoubleArrowLeft {
+	width: 				32px;
+	height:				32px;
+	border:				0px;
+	padding:			0px;
+	margin-left: 		15px; 
+	margin-right: 		15px;
+	margin-bottom:		9px; 
+}
+
+#shareDirectArrowRight, .createQueryArrowRight {
+	background:			url(../images/share/arrow_btn_right.png) no-repeat;
+}
+
+#shareDirectArrowLeft, .createQueryArrowLeft {
+	background:			url(../images/share/arrow_btn_left.png) no-repeat;
+}
+
+.createQueryDoubleArrowRight {
+	background:			url(../images/share/arrow-double-right.png) no-repeat;
+}
+
+.createQueryDoubleArrowLeft {
+	background:			url(../images/share/arrow-double-left.png) no-repeat;
+}
+
+.ICButton_Middle_On button {
+	background:			none repeat scroll 0 0 transparent;
+	border:				medium none;
+	color:				white;
+}
+
+.ICButton_Middle_Flexible{
+	width:				auto !important;
+	padding-left:		5px !important;
+	padding-right:		5px !important;
+}
+.highlightedFileRow {
+	background-color: #BAC9CE;
+}
+
+option.selected {
+    background: red;   
+}
+
+.ac .actuListBoxDropdownList {
+	min-width: 200px;	
+}
+
+.ac .dropdown-trunc-text{
+	min-width: 160px; max-width: 160px;
+}
+
+div#act_dlg-myFilesContainer-0-cnt span.actuListBoxDisplayButton.dropdown-trunc-text {
+  min-width: 160px !important;
+}
+
+
+.ac .acmsgdlg {
+	max-width: 500px;
+}
+
+.ftype-wizard
+{
+	overflow-x : auto !important;
+}
+
+.ftype-wizard #myFilesContainer
+{
+	overflow-y : auto !important;
+	overflow-x : hidden;
+}
+
+#logininfo .info 
+{
+	float:left; 
+	width :150px;
+	text-align:left;
+	margin-left: 6px;
+}
+
+#logininfo .login 
+{
+	float:left; 
+	width :150px;
+}
+
+#errorContainer a[href]
+{ 
+	color : #2998fb;
+	text-decoration : underline;	
+}
+
+#containerParameter .btn-group select
+{
+	min-width:60px;
+	
+}
+
+.info p
+{
+	margin-top : -10px;	
+}
+
+.ac .application-nav .nav-tabs > li > a {
+    min-width: 0px;
+    color: #fff;
+}
+
+.ac .application-nav {
+    background: #333333;
+}
+
+.ac .padded-container > .border-none {
+	border: none;
+    background: transparent;
+    color: #333333;
+}
+
+.ac .btn-group > .btn {
+	border: none;
+    background: transparent;
+    color: #333333;
+}
+
+.ac .padded-container{
+	padding: 3px 0 0 0;
+}
+
+.ac ul.right-icons > li > a:hover {
+  color: #808080;
+}
+
+.ac ul.right-icons > li > a:hover [class^="icon-"],
+.ac ul.right-icons > li > a:hover [class*=" icon-"] {
+  color: #808080;
+}
+
+.ac .navbar .right-icons .open > a {
+    color: #808080;
+}
+
+.ac .navbar .right-icons .open > a [class^="icon-"],
+.ac .navbar .right-icons .open > a [class*=" icon-"] {
+  color: #808080;
+}
+
+.checkedRowColor{
+	background-color: #DFE7EA;
+}
+
+.nonHighlightedFileRow{
+	background-color: #FFFFFF;
+}
+
+.ac .dropdown-menu li > .acmenu{
+	padding:8px 6px 8px 12px;
+}
+
+.ac button[data-toggle="dropdown"].active, .ac button[data-toggle="dropdown"]:active, .ac button[data-toggle="dropdown"]:hover, .ac button[data-toggle="dropdown"]:focus {
+   border: none;
+  	background: none;
+}
+
+.ac .nav-tabs > li > a{
+	border-right: none;
+}
+
+.ac .nav-tabs > .active > a, .ac .nav-tabs > .active > a:hover{
+	border: none;
+}
+
+.ac .ac-nav-tabs li:first-child{
+	border-left: none;
+}
+
+.ac .ac-nav-tabs li:last-child{
+	border-right: none;
+}
+
+.ac .ac-nav-tabs li{
+	border-top: none;
+}
+
+.ac .ac-nav-tabs li >a:hover{
+	background: none;
+}
+
+
+.ac .nav-tabs > .active > a > span, .ac .nav-tabs > .active > a:hover> span {
+    padding-bottom: 11px;
+    border-bottom: 4px solid #0072aa;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ac .nav-tabs >li> a > span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.ac .nav-tabs>li > a:hover> span{
+	padding-bottom: 11px;
+    border-bottom: 4px solid #666666;
+	font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  
+}
+
+.UnselectedcheckBoxImage{
+	background-image:	url(../images/checkboxes_unselected.png);
+	height: 14px;
+	width:14px;
+}
+
+.SelectedcheckBoxImage{
+	background-image:	url(../images/checkboxes_individual_selected.png);
+	height: 14px;
+	width:14px;
+}
+
+.checkbox_some_selected_image{
+	background-image:	url(../images/checkboxes_some_selected.png);
+	height: 14px;
+	width:14px;
+}
+
+.checkbox_all_selected_image{
+	background-image:	url(../images/checkboxes_all_selected.png);
+	height: 14px;
+	width:14px;
+}

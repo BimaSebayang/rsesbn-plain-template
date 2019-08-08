@@ -1,0 +1,47 @@
+{
+    "mainMenu": [
+        {
+            "pageName": "Customer Analytics",
+            "pageURL": "",
+            "subMenu": [
+			
+				{
+                    "pageName": "Churn Analytics",
+                   "pageURL": "dashboards.jsp?dashboard=Customer_Analysis&wd=1400&ht=1600&edit=false&showTab=true"
+                },
+				{
+                    "pageName": "Churn Customer By Year",
+                    "pageURL": "reports.jsp?report=ChurnByYear.rptdesign&iv=false"
+                }
+			]
+        },
+		
+		{
+            "pageName": "Sentiment Analytics",
+            "pageURL": "",
+            "subMenu": [
+				{
+                    "pageName": "CRM Logs Analytics",
+		        "pageURL": "dashboards.jsp?dashboard=Customer_Analysis&wd=1400&ht=1600&edit=false&showTab=true"
+
+                }
+			]
+		},
+		
+		{
+            "pageName": "OpenText Analytics",
+            "pageURL": "",
+            "subMenu": [
+                
+		{
+                    "pageName": "Self-Service Dashboards",
+                    "pageURL": "http://10.14.18.114:8700/iportal/dashboard?__launchDesigner=true&usePersonalDashboard=false&showBanner=false&showBreadCrumb=false&fromlink=yes&activity=create"
+                },
+				{
+                    "pageName": "BIG Data Analytics",
+                    "pageURL": "http://10.14.18.66:8110/bafrontend" 
+                }
+			]
+        }
+    ]
+}

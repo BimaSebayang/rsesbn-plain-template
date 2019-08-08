@@ -1,0 +1,158 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #f4f4f4;
+}
+.ac {
+  background: #f4f4f4;
+}
+.ac .ac-light-text {
+  color: #aaa;
+}
+.ac .application-nav {
+  background: transparent;
+}
+.ac .view-header-bar {
+  background: #f4f4f4;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.ac .view-header-bar .view-header-bar-inner {
+  border-bottom: none;
+  height: 125px;
+}
+.ac .view-header-bar .view-header-bar-inner .view-header-title {
+  color: #82cd1e;
+  padding: 60px 0px 0px 0px;
+}
+.ac .view-header-bar .view-header-bar-inner .view-header-bar-content-right {
+  padding: 90px 16px 0px 0px;
+}
+.ac .view-header-bar .view-header-bar-inner-thin {
+  height: 85px;
+}
+.ac .view-header-bar .view-header-bar-inner-thin .view-header-title {
+  padding: 20px 0px 0px 0px;
+}
+.ac .view-header-bar .view-header-bar-inner-thin .view-header-bar-content-right {
+  padding: 50px 16px 0px 0px;
+}
+.ac .ac-content-area {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background: #fdfdfd;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 32px;
+  padding: 24px;
+  color: #363636;
+}
+.ac .ac-content-area a {
+  color: #2998fb;
+  text-decoration: none;
+}
+.ac .ac-content-area a:hover {
+  text-decoration: underline;
+}
+.ac h2.ac-content-area-title {
+  font-weight: 600;
+  color: #aaa;
+  font-size: 22px;
+  line-height: 24px;
+}
+.ac .ac-fade-container {
+  background-color: #f6f6f6;
+  background-image: -moz-linear-gradient(top, #f1f1f1, #fdfdfd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#fdfdfd));
+  background-image: -webkit-linear-gradient(top, #f1f1f1, #fdfdfd);
+  background-image: -o-linear-gradient(top, #f1f1f1, #fdfdfd);
+  background-image: linear-gradient(to bottom, #f1f1f1, #fdfdfd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff1f1f1', endColorstr='#fffdfdfd', GradientType=0);
+  padding: 24px;
+  position: relative;
+}
+.ac .ac-fade-container h3 {
+  font-weight: 600;
+  color: #aaa;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 24px 0px 8px 0px;
+}
+.ac .ac-fade-container p {
+  color: #464646;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+}
+.ac .ac-fade-container dl dt {
+  position: relative;
+  float: left;
+  color: #363636;
+  padding-left: 16px;
+}
+.ac .ac-fade-container dl dd {
+  margin-left: 250px;
+}
+.ac .ac-components-list {
+  list-style: none;
+  margin: 0px;
+}
+.ac .ac-components-list li {
+  display: block;
+  position: relative;
+  float: left;
+  width: 45%;
+  padding: 8px 8px;
+  cursor: pointer;
+  margin: 0px;
+  margin-bottom: 24px;
+}
+.ac .ac-components-list li p {
+  padding-right: 24px;
+}
+.ac .ac-components-list li:hover {
+  background: #fff;
+}
+.ac .ac-components-list li .ac-component-icon {
+  font-size: 50px;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+.ac .ac-components-list li .ac-components-info {
+  margin-left: 100px;
+}
+.ac .ac-sub-components-info {
+  padding-left: 8px;
+}
+.ac .ac-sub-components-info h3 {
+  color: #2998fb;
+  margin-top: 8px;
+}

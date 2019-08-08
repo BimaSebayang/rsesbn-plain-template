@@ -1,0 +1,38 @@
+.pagination {
+    margin: 0;
+}
+
+tr.group, tr.group:hover {
+	background-color: #ddd !important;
+}
+
+td.nowrap {
+	white-space: nowrap;
+}
+
+.content-wrapper, .right-side {
+    background-color: #ffebcc;
+}
+
+
+.sidebar-collapse .sidebar-ap >li .label.label-badge {
+	position : relative;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+    display: inherit;
+}
+.sidebar-ap >li .label.label-badge {
+	display: none;
+}
+
+.btn-flat.btn-small{
+	padding: 1px;
+}
+
+.main-header .sidebar-toggle:before {
+    content: "";
+}

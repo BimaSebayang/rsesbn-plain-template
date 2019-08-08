@@ -1,0 +1,49 @@
+
+/* Outer Wrapper */
+
+.actuate-dashboard-view-outerwrapper {
+	padding: 16px;
+	border: 1px solid #e1e1e1;
+	background: none repeat scroll 0 0 #e9e9e9
+}
+
+/* Middle */
+.actuate-dashboard-view-outerwrapper > .actuate-widget-panel-bwrap > .actuate-widget-panel-ml {
+ 	padding: 0px !important;
+ 	background-color:	transparent;
+}
+
+.actuate-dashboard-view-outerwrapper > .actuate-widget-panel-bwrap > .actuate-widget-panel-ml > .actuate-widget-panel-mr {
+	padding: 0px !important;
+	background-color:	transparent;
+}
+
+.actuate-dashboard-view-outerwrapper > .actuate-widget-panel-bwrap > .actuate-widget-panel-ml > .actuate-widget-panel-mr > .actuate-widget-panel-mc {
+	padding: 0px !important;
+	background-color:	transparent;
+}
+
+
+/* Bottom */
+.actuate-dashboard-view-outerwrapper > .actuate-widget-panel-bwrap > .actuate-widget-panel-bl {
+	height: 0 !important;
+	background: none !important;
+}
+
+.actuate-dashboard-view-outerwrapper > .actuate-widget-panel-bwrap > .actuate-widget-panel-bl > .actuate-widget-panel-br {
+	height: 0 !important;
+	background: none !important;
+}
+
+.actuate-dashboard-view-outerwrapper > .actuate-widget-panel-bwrap > .actuate-widget-panel-bl > .actuate-widget-panel-br > .actuate-widget-panel-bc {
+	height: 0 !important;
+	background: none !important;
+}
+
+/* End of Outer Wrapper */
+
+.actuate-widget-panel-bl
+{
+	height: 0 !important;
+	background: none !important;
+}

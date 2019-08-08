@@ -16,98 +16,24 @@
 <!-- iCheck -->
 <link rel="stylesheet" href="plugins/iCheck/square/blue.css" />
 <link href="style/captcha-custom.css" rel="stylesheet" />
-<script src="script/captcha-js-custom.js"></script>
+<script src="assets/resources/angular/js/angular.min.js"></script>
+<script src="assets/resources/angular/js/ui-bootstrap-tpls-2.4.0.min.js"></script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+<script src="assets/cms/app/js/app.js"></script>
+<script src="assets/cms/app/js/controller.js"></script>
+<script src="assets/cms/app/js/app-input.js"></script>
+<script src="assets/dom/registrationController.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
 
 </head>
 <body class="hold-transition login-page" onload="generateCaptcha()">
 
-	<style>
-.goof {
-	height: 100px;
-	background: #ccc;
-	margin: 4px -11px;
-	padding: 50px 10px 10px 10px;
-	position: relative;
-}
-
-.goof h4 {
-	position: absolute;
-	left: 5%;
-	top: 60%;
-	color: #0095d9;
-	font-size: 16px;
-	font-weight: bold;
-}
-
-.activate {
-	background-color: #0095d9;
-}
-
-.activate h4 {
-	color: #fff;
-}
-
-.gaf {
-	height: 328px;
-	background: green;
-	margin: -14px 0;
-}
-
-.gaf h3 {
-	padding: 10px;
-	color: #fff;
-}
-
-body {
-	background-color: #fff;
-}
-
-.social-icon {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.social-icon li {
-	display: inline-block;
-	text-align: center;
-}
-
-.social-icon a {
-	display: block;
-	width: 44px;
-	height: 44px;
-	line-height: 44px;
-	border-radius: 50%;
-	margin-right: 5px;
-}
-
-.social-icon a {
-	background: rgba(255, 255, 255, 0.85);
-	/* social icon background color */
-	color: #000; /* social icon color */
-}
-
-.social-icon a:hover {
-	background: rgba(255, 255, 255, 0.25);
-	/* social icon hover background color */
-	color: #fff; /* social icon hover color */
-}
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	padding-top: 5px;
-	width: 100%;
-	height: 60px;
-	background-color: #000;
-}
-</style>
 
 	<div class="text-center">
 		<img style="width: 130px; height: 130px;"
@@ -122,6 +48,7 @@ body {
 			<div class="row"
 				style="text-align: center; position: relative; top: 10%;">
 				<h4>Selamat Datang di E-SBN Bank Mega</h4>
+
 			</div>
 		</div>
 	</section>
@@ -151,21 +78,24 @@ body {
 								<p>Username or password invalid!</p>
 							</div>
 						</div>
-						 <form th:action="@{/login}" method="post">
-            <div class="form-group has-feedback">
-                <input type="text" class="form-control" name="username" placeholder="username"/>
-                <span class="glyphicon glyphicon-user form-control-feedback"></span>
-            </div>
-            <div class="form-group has-feedback">
-                <input type="password" class="form-control" name="password" placeholder="password"/>
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-            </div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
-                </div>
-            </div>
-        </form>
+						<form th:action="@{/login}" method="post">
+							<div class="form-group has-feedback">
+								<input type="text" class="form-control" name="username"
+									placeholder="username" /> <span
+									class="glyphicon glyphicon-user form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="password" class="form-control" name="password"
+									placeholder="password" /> <span
+									class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="row">
+								<div class="col-xs-4">
+									<button type="submit"
+										class="btn btn-primary btn-block btn-flat">Login</button>
+								</div>
+							</div>
+						</form>
 
 						<div class="card-footer"
 							style="text-align: center; margin-top: 20px;">
@@ -186,36 +116,41 @@ body {
 	</div>
 
 
+	<div ng-app="registrationController">
+		<div ng-controller="requestLogin">
 
-	<div class="modal fade" id="signup1" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="text-center">
-						<img style="width: 50px; height: 50px;"
-							src="file/images/Bank_Mega_2013.svg" alt="sunil" class="rounded" />
-					</div>
-					<h5 class="modal-title" id="exampleModalLabel">Registrasi Akun</h5>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-12">
-							<form class="form" role="form" id="login-nav">
-								<div class="form-group">
-									<input type="text" class="form-control" name="username"
-										placeholder="No. E-KTP*" />
-								</div>
-							</form>
-							<div class="form-group">
-								
-								<br></br>
-								<div class="capbox">
 
-									<div id="CaptchaDiv">
+			<div class="modal fade" id="signup1" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div class="text-center">
+								<img style="width: 50px; height: 50px;"
+									src="file/images/Bank_Mega_2013.svg" alt="sunil"
+									class="rounded" />
+							</div>
+							<h5 class="modal-title" id="exampleModalLabel">Registrasi
+								Akun</h5>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12">
+									<form action="#" class="form" role="form" id="login-nav">
+										<div class="form-group">
+											<input type="text" class="form-control" name="username"
+												placeholder="No. E-KTP*" />
+										</div>
+									</form>
+									<div class="form-group">
 
-										<div class="row">
-											<svg viewBox="0 0 960 300">
+										<br></br>
+										<div class="capbox">
+
+											<div id="CaptchaDiv">
+
+												<div class="row">
+													<svg viewBox="0 0 960 300">
 							    								<symbol id="s-text">
 																	<text text-anchor="middle" x="50%" y="70%" id="output" />
 																</symbol>
@@ -228,85 +163,92 @@ body {
 																	<use xlink:href="#s-text" class="text-copy"></use>
 																</g>
 															</svg>
+												</div>
+
+											</div>
+
+											<div class="capbox-inner">
+												Type the above number:<br></br> <input type="hidden"
+													id="txtCaptcha" /> <input type="text" name="CaptchaInput"
+													id="CaptchaInput" size="15" />
+
+												<button onclick="generateCaptcha()">
+													<i class="fa fa-retweet"></i>
+												</button>
+												<button onclick="check()">
+													<i class="fa fa-check"></i>
+												</button>
+
+												<br></br>
+
+											</div>
 										</div>
+										<br /> <br />
 
 									</div>
 
-									<div class="capbox-inner">
-										Type the above number:<br></br> <input type="hidden"
-											id="txtCaptcha" /> <input type="text" name="CaptchaInput"
-											id="CaptchaInput" size="15" />
-											
-											<button onclick="generateCaptcha()"><i class="fa fa-retweet"></i></button>
-								<button onclick="check()"><i class="fa fa-check"></i></button>
-											
-											<br></br>
 
-									</div>
 								</div>
-								<br /> <br />
-
 							</div>
-
-
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" 
+								data-dismiss="modal" data-target="#signup2" data-toggle="modal">
+								<i class="fa fa-arrow-right"></i> Lanjut
+							</button>
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal">
+								<i class="fa fa-times"></i> Batal
+							</button>
 						</div>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal" data-target="#signup2" data-toggle="modal">
-						<i class="fa fa-arrow-right"></i> Lanjut
-					</button>
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">
-						<i class="fa fa-times"></i> Batal
-					</button>
-				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="modal fade" id="signup2" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y: scroll;">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">
-					<div class="text-center">
-						<img style="width: 50px; height: 50px;"
-							src="file/images/Bank_Mega_2013.svg" alt="sunil" class="rounded" />
-					</div>
-					Registrasi Akun</h5>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-12">
-							<form class="form" role="form" id="login-nav">
-								<div class="form-group">
-									<input type="text" class="form-control" name="username"
-										placeholder="SID*" />
+			<div class="modal fade" id="signup2" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalLabel" aria-hidden="true"
+				style="overflow-y: scroll;">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">
+								<div class="text-center">
+									<img style="width: 50px; height: 50px;"
+										src="file/images/Bank_Mega_2013.svg" alt="sunil"
+										class="rounded" />
 								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" name="username"
-										placeholder="No. E-KTP*" />
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" name="username"
-										placeholder="No. Handphone*" />
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" name="username"
-										placeholder="Email*" />
-								</div>
-							</form>
-							<div class="form-group">
-								<br></br>
-								<div class="capbox">
+								Registrasi Akun
+							</h5>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12">
+									<form class="form" role="form" id="login-nav">
+										<div class="form-group">
+											<input type="text" class="form-control" name="username"
+												placeholder="SID*" />
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" name="username"
+												placeholder="No. E-KTP*" />
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" name="username"
+												placeholder="No. Handphone*" />
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" name="username"
+												placeholder="Email*" />
+										</div>
+									</form>
+									<div class="form-group">
+										<br></br>
+										<div class="capbox">
 
-									<div id="CaptchaDiv">
+											<div id="CaptchaDiv">
 
-										<div class="row">
-											<svg viewBox="0 0 960 300">
+												<div class="row">
+													<svg viewBox="0 0 960 300">
 							    								<symbol id="s-text">
 																	<text text-anchor="middle" x="50%" y="50%" id="output" />
 																</symbol>
@@ -319,82 +261,91 @@ body {
 																	<use xlink:href="#s-text" class="text-copy"></use>
 																</g>
 															</svg>
+												</div>
+
+											</div>
+
+											<div class="capbox-inner">
+												Type the above number:<br></br> <input type="hidden"
+													id="txtCaptcha" /> <input type="text" name="CaptchaInput"
+													id="CaptchaInput" size="15" />
+												<button onclick="generateCaptcha()">
+													<i class="fa fa-retweet"></i>
+												</button>
+												<button onclick="check()">
+													<i class="fa fa-check"></i>
+												</button>
+												<br></br>
+
+											</div>
 										</div>
+										<br /> <br />
 
 									</div>
 
-									<div class="capbox-inner">
-										Type the above number:<br></br> <input type="hidden"
-											id="txtCaptcha" /> <input type="text" name="CaptchaInput"
-											id="CaptchaInput" size="15" /><button onclick="generateCaptcha()"><i class="fa fa-retweet"></i></button>
-								<button onclick="check()"><i class="fa fa-check"></i></button><br></br>
 
-									</div>
 								</div>
-								<br /> <br />
-
 							</div>
-
-
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-target="#signup3" data-toggle="modal">
+								<i class="fa fa-arrow-right"></i> Lanjut
+							</button>
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal">
+								<i class="fa fa-times"></i> Batal
+							</button>
 						</div>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-target="#signup3" data-toggle="modal">
-						<i class="fa fa-arrow-right"></i> Lanjut
-					</button>
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">
-						<i class="fa fa-times"></i> Batal
-					</button>
+			</div>
+
+			<div class="modal fade" id="signup3" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Registrasi
+								Akun</h5>
+						</div>
+						<div class="modal-body">Apakah Data Anda Sudah Valid?</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal" data-target="#signup4" data-toggle="modal">
+								<i class="fa fa-check"></i> Ok
+							</button>
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal">
+								<i class="fa fa-times"></i> Batal
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="modal fade" id="signup3" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Registrasi Akun</h5>
-				</div>
-				<div class="modal-body">Apakah Data Anda Sudah Valid?</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal" data-target="#signup4" data-toggle="modal">
-						<i class="fa fa-check"></i> Ok
-					</button>
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">
-						<i class="fa fa-times"></i> Batal
-					</button>
+			<div class="modal fade" id="signup4" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Registrasi
+								Akun</h5>
+						</div>
+						<div class="modal-body">Mohon aktifkan akun anda melalui
+							link yang dikirimkan ke email Anda yang telah didaftarkan.</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal" data-target="#signup2" data-toggle="modal">
+								<i class="fa fa-check"></i> Ok
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
-
-	<div class="modal fade" id="signup4" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Registrasi Akun</h5>
-				</div>
-				<div class="modal-body">Mohon aktifkan akun anda melalui link
-					yang dikirimkan ke email Anda yang telah didaftarkan.</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal" data-target="#signup2" data-toggle="modal">
-						<i class="fa fa-check"></i> Ok
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 	<!-- jQuery 2.2.0 -->
 	<script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
 	<!-- Bootstrap 3.3.6 -->

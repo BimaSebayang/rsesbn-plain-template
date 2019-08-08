@@ -1,0 +1,649 @@
+.act-msgDlg .modal-backdrop
+{
+	background-color: #FFFFFF;
+	z-index: 1051;
+	opacity: 0.1;
+	filter: alpha(opacity=1);
+}
+.ac .act-dlg .acmsgdlg
+{
+	z-index: 1052;
+}
+div.ac-progressbar
+{
+	z-index: 5000;
+	background: none repeat scroll 0 0 transparent;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	width:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position:fixed;
+}
+.ac .ui-dropdownButton {
+    width: 75px;
+    white-space: nowrap;
+
+    background-color: #F4F4F4;
+    background-image: linear-gradient(to bottom, #F4F4F4, #F4F4F4);
+    background-repeat: repeat-x;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    color: #818181;
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 0;
+    outline: 0 none;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.ac .ui-dropdownButtonTitle {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 68px;
+}
+
+.ac .ui-dropdownButtonOffline {
+    background-image: linear-gradient(to bottom, #F8AFAF, #D0A3A3) !important;
+}
+
+.ac .ui-dropdownButtonRunning {
+    background-image: linear-gradient(to bottom, #9DDBE1, #afcfd2) !important;
+}
+.ac .actuImgCheckBoxUnChecked
+{
+	display:     inline-block;
+    width:       14px;
+    height:      14px;
+    margin-top: 5px;
+	background-image: url(../img/Checkbox_Default_Unchecked.png);
+}
+
+.ac .actuImgCheckBoxChecked
+{
+	display:     inline-block;
+    width:       14px;
+    height:      14px;
+    margin-top: 5px;
+	background-image: url(../img/Checkbox_Default_Checked.png);
+}
+
+.ac .actuCheckBoxlblAppend
+{
+   	margin-top: 3px;
+    padding-left: 2px;
+}
+
+.ac .actuCheckBox
+{
+	visibility:	hidden;
+}
+
+.ac .dl-details label {
+    cursor: auto;
+}.ac table.acbasedlg {
+	background:none repeat scroll 0 0 transparent;	
+}
+
+.ac table.acbasedlg td.acdlgcolumn {
+	padding-left:10px;
+}
+
+.ac .form-horizontal td input{
+	margin-bottom: 10px
+}
+
+.ac .form-horizontal td label{
+	padding-bottom: 10px
+}
+
+.ac .toolbartable {
+	color: #333333;
+    font-size: 14px;
+    margin-bottom: 1px;
+    width: 100%;
+    background: none repeat scroll 0 0 transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+
+.ac .acTblDivContainer {
+	margin: 0px;
+	padding: 0;
+}
+
+.ac table tr td.accolmiddle {
+	vertical-align: middle;
+}
+
+/*
+Style Grid items
+.ac .acTblDivContainer tbody tr td a[id^="grdItem-"]{
+	padding-right: 1px;
+	padding-left: 1px;
+	text-decoration: none;
+}
+
+*/
+.ac .acTblDivContainer tbody tr td a[id^="grdItem-"]{
+	text-decoration: none;
+}
+.ac .acTblDivContainer .check-column a, .ac .acTblDivContainer .caret-column a {
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+/*
+ dropdown for edit wrench field
+*/
+.ac .caret-column .dropdown ul li a{
+	padding-right: 6px;
+	padding-left: 18px;
+}
+
+.ac .acTblDivContainer .table-striped tbody tr:hover{
+	 background-color: #f4f4f4;
+}
+
+.ac input[type="radio"],
+.ac input[type="checkbox"] {
+  margin: 4px 0 0;
+  *margin-top: 0;
+  /* IE7 */
+
+  margin-top: 1px \9;
+  /* IE8-9 */
+
+  line-height: normal;
+}
+.ac ul.text-pagination li a {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 22px;
+}
+
+.pageinfo-text {
+position: relative;
+}
+
+.ac .ac-content-area {
+  margin: 0px 0px 0px 0px !important;
+}
+.icon-large-user:before{
+	  font-size: 1.33em !important;
+}
+
+.ac .padding-top-small_2 {
+  padding-top: 12px !important;
+}
+
+.ac .nullBottom{
+	 margin-bottom: 0px !important;
+}.ac table td.accoloumn
+{
+	margin : 0px;
+	padding : 0 0 0 3px;
+	width: 1px;
+    vertical-align: middle;
+}
+
+.ac .acGridContainer .clearBoth
+{
+	clear : both;
+}
+
+.ac .acGridContainer div[class*="row"] {
+	text-align : left;
+}
+
+.ac .acGridContainer a.acsearchPadRight {
+	margin: 0px 3px 0px 0px;
+}
+
+.ac .acGridContainer .acsearch,
+.ac .acGridContainer .acsearch input.search
+{
+	vertical-align: middle;
+}
+
+.ac .acGridContainer .acsearch-right{
+text-align:right;
+}
+
+.ac .acGridContainer .acsearch a[class="btn"] {
+	display: inline-block;
+	margin: 0px;
+}
+
+.ac .acGridContainer input.search {
+	max-height : 15px;
+	min-height : 15px;
+}
+
+.ac .acGridContainer a.acAddEditPadRight {
+	margin: 0px 5px 0px 0px;
+}
+
+.ac .acGridContainer div.acTlbrSelectItems {
+	margin: 0px 10px 0px 0px;
+}
+
+.ac .acGridContainer div.acTlbrSelectItems {
+	margin: 0px 10px 0px 0px;
+}
+
+.ac .acGridContainer a.acTlbrSelectItems {
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0px;
+}
+
+.ac .acGridContainer a.acTlbrSelectItems i.selectItemsCaret {
+	margin-top: 10px;
+	margin-left: 3px;
+}
+
+.ac .acGridContainer a.acTlbrBtnTextOnly {
+	min-width: 155px;
+	height: 40px;
+	border-radius: 4px 4px 4px 4px;
+	text-align: center;
+	padding: 4px 12px;
+	font-size: 16px;
+}
+
+.ac .acGridContainer input.search-large {
+	max-height : 32px;
+	min-height : 32px;
+}
+
+.ac .displayInlineBlock {
+	display : inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.ac .lblAppend {
+	margin-top : 9px;
+	padding-left : 2px;
+}
+
+.ac div.msgnoitemsfound {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.ac .acnavbar {
+	padding-top:30px;
+}
+
+.ac .acnavbar .navbar .nav > li,
+.ac .acnavbar .navbar .nav > li > a {
+	color:#808080;
+	background-color:#FFFFFF;
+	text-decoration: none;
+	text-shadow:none;
+}
+
+.ac .acGlblNavBar .submenulabel,
+.ac .acGlblNavBar .navbar,
+.ac .acGlblNavBar .navbar .nav > li,
+.ac .acGlblNavBar .navbar .nav > li > a {
+	color:#FFFFFF;
+}
+
+.ac .acGlblNavBar .submenu a.submenulabel:focus,
+.ac .acGlblNavBar .submenu a.submenulabel:hover,
+.ac .acGlblNavBar .navbar .nav > li > a:focus,
+.ac .acGlblNavBar .navbar .nav > li > a:hover
+{
+  background-color: transparent;
+  color: #808080;
+  text-decoration: none;
+}
+
+.ac .acGlblNavBar .submenu a.submenulabel:focus i,
+.ac .acGlblNavBar .submenu a.submenulabel:hover i{
+	border-top: 4px solid #808080;
+}
+
+.ac .acGlblNavBar .submenulabel,
+.ac .acmenu {
+	cursor: pointer;
+	font-weight:bold;
+}
+
+.ac .acprofile {
+	cursor: pointer;
+	float: right;
+	padding: 5px 10px;
+}
+
+.ac .submenu a:hover,
+.ac .submenu a:focus,
+.ac .acnavbar .navbar .nav > li > a:hover,
+.ac .acnavbar .navbar .nav > li > a:focus {
+	color:#000000;
+	background-color:transparent;
+	text-decoration: none;
+}
+.ac .submenu {
+    background-color: transparent;
+    color: #999999;
+    float: none;
+    padding: 5px;
+    text-decoration: none;
+    /* text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); */
+    cursor:pointer;
+}
+
+.ac .submenu a {
+   text-decoration: none;
+   color: #353535;
+   /* text-shadow: 0 1px 0 #353535; */
+}  
+
+.ac .wrench{
+	cursor:pointer;
+}
+
+.ac .pageinfo-right {
+	text-align:right;
+}
+
+.ac .acGridContainer .pageinfo a[class="btn"]{
+	margin: 0px 0px 0px 3px;
+}
+.ac .acGridContainer .pageinfo p{
+	text-align: center;
+}
+
+.ac .acGridContainer .pageinfo {
+	font-size: 20px;
+	display: inline-block;
+	line-height: 22px;
+}
+
+.ac .acGridContainer a.backbutton {
+	padding: 4px 12px;
+	margin:0px 0px 19px;
+}
+
+.ac .view-update-header {
+	vertical-align: middle;
+}
+.ac .accaret-white {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 4px solid #FFFFFF;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+.ac .accaret-left {
+    border-left: 0; 
+    border-right: 6px solid #000000;
+    border-top: 6px solid transparent; 
+    border-bottom: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+}
+
+.ac .acgridtext {
+	margin: 1px 0 1px;
+}
+
+.ac .acGridContainer a[class="btn-small"] {
+	min-height : 22px;
+}
+
+.ac .acGridContainer a[class="btn"] {
+	margin: 0px 10px 0px 0px;
+	display:inline-block;
+}
+
+.ac .acGridContainer a i[class*="icon-"] {
+	vertical-align : middle;	
+}
+
+.ac .acGridContainer .span2 a[id^="grdItem-"] {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.ac a.acaddedit-back:hover,
+.ac .acaddedit-back {
+    color: #808080;
+    font-weight: bold;
+    line-height: 30px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.ac .acemptybox {
+    border: 3px solid #808080;
+    font-size: 75px;
+    padding: 150px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.ac .acaddedit-emptyrow {
+	padding:5px;
+}
+
+.ac .dlgLabelBox {
+	cursor: default;
+}
+
+.ac .acheader, .acaddedit {
+    color: #333333;
+    display: inline-block;
+    margin: 0;
+}
+
+.ac .actlbhr {
+	border-width: 3px 0 2px;
+	margin : 0px;
+}
+.ac hr.gridhr {
+	margin : 10px 0;
+}
+
+.ac .acnewdropdownbutton
+{
+	min-width: 155px;
+	border-radius: 4px 4px 4px 4px;
+	text-align: center;
+	padding: 4px 12px;
+	font-size: 16px;
+}
+
+.ac .table-data-header-inner ul {
+    padding-top: 7px;
+}
+
+.ac .inline-title {
+    display: inline;
+    font-size: 24px;
+}
+
+.ac .green-status {
+    color: #558E28;
+    margin: 1px 0 1px;
+}
+
+.ac .alert-status {
+    color: #FD9A00;
+    margin: 1px 0 1px;
+}
+
+.ac .error-status {
+    color: #A40800;
+    margin: 1px 0 1px;
+}
+
+.ac .ui-combobox {
+		position: relative;
+		display: inline-block;
+	}
+	
+.ac .ui-combobox-toggle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-left: -1px;
+		padding: 0;
+		/* adjust styles for IE 6/7 */
+		*height: 1.81em;
+		*top: 0.001em;
+	}
+
+.ac .ui-combobox-input {
+		margin: 0;
+		padding: 0.3em;
+	}
+.ac .actuListBoxContainer,
+.ac .actuListBoxContainer .actuListBoxDropdownList
+{
+	text-align:left;
+	white-space:normal;
+}
+
+.ac .actuListBoxDropdownButton
+{
+	height:32px;
+}
+
+.ac .actuListBoxContainer
+{
+	margin-bottom: 10px;
+}
+
+.ac .actuListBoxContainer ul.actuListBoxDropdownList
+.ac .actuListBoxContainer .actuListBoxDropdownButton
+{
+	padding:0px;	
+}
+
+.ac .actuListBoxContainer .actuListBoxDropdownButton .actuListCaret
+{
+	float : right;
+	margin-top : -12px;
+	margin-left : 10px;	
+}
+
+.ac .actuListBoxContainer .actuListBoxDisplayButton
+{
+}
+
+.ac .actuListBoxContainer .dropdown-menu 
+{
+    max-height: 250px;
+    overflow: auto;
+}
+
+.ac .multiselectlistboxcontainer
+{
+	padding-left:10px;
+	float:left;
+}
+
+.ac ul.actuListBoxDropdownList li a
+{
+	height: 20px;
+}
+.ac .sidenav
+{
+	cursor : pointer
+}
+
+.ac .cliptext
+{
+	overflow : hidden;
+	white-space : nowrap;
+	text-overflow : ellipsis;
+	min-height:20px;
+	
+}/*!
+ * jQuery UI Datepicker 1.8.22
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:2px; }
+.ui-datepicker .ui-datepicker-next { right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}

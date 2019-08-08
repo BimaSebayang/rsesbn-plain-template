@@ -1,0 +1,72 @@
+.myIframe {
+/*position: relative;*/
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto; 
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+border: solid black 1px;
+} 
+
+.myImage {
+	position: absolute;
+top: -80px;
+left: 0;
+width: 100%;
+height: 100%;
+display:block; 
+margin: 0 auto;
+text-align: center;
+/*overflow:hidden*/
+}
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display:block; 
+margin: 0 auto;
+text-align: center;
+overflow:hidden
+}
+.myVideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display:block; 
+	margin: 0 auto;
+	text-align: center;
+	overflow:hidden
+}
+#canvas {
+	/*position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display:block; 
+	margin: 0 auto;
+	text-align: center;
+	overflow:hidden*/
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Condition for split window */
+article {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}

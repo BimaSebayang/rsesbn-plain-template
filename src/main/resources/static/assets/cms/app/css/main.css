@@ -1,0 +1,142 @@
+
+.background {
+  background: url("../../../img/background.png") !important;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  position: relative;
+  
+}
+ 
+ .header {
+  background: url("../../../img/header.png") !important;
+  max-width: 1150px;
+  height: 150px;
+  margin-left: 150px;
+  margin-top: -10px;
+  display: block;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  font-size: 12px; 
+  text-decoration: none;
+}
+
+@media (max-width: 1150px){
+	.header{
+		width:90%;
+		height: 150px;
+		display: block;
+	}
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 65px;
+  margin-right: 100px;
+  font-family: Arial;
+}
+
+@media (max-width: 1120px ){
+	.header-right, .header-date{
+		font-size: 15px;
+		margin-right: -10%;
+	}
+}
+
+.header-date {
+  float: left;
+  font-size: 12px;
+  margin-top: 130px;
+  font-family: Arial;
+  margin-left: 80px;
+  font-family: Arial;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+/* @media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+} */
+
+.Content{
+    background-color: white;
+    max-width: 1150px;
+  	height: 530px;
+  	margin-left: 150px;
+}
+
+@media(max-width: 1150px){
+	.content{
+		width:90%;
+		height: 150px;
+		display: block;
+	}
+}
+.Footer{
+    position: relative;
+    margin-top: -30px; /* negative value of footer height */
+    height: 40px;
+    clear:both;
+    background-color: #ec6211;
+    width: 1150px;
+    margin-left: 150px;;
+}
+
+.btnLogin {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 9px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin-top: 30px;
+    
+}
+
+.btnLogin:hover {background-color: #3e8e41}
+
+.btnLogin:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.inputText{
+	width: 400px;
+	align-items: center;
+	margin-left: 500px;
+}
+
+.spasi{
+	padding-left: 10px;
+}
+
+.header-logout {
+  float: right;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 120px;
+  margin-right: -380px;
+  font-family: Arial;
+}

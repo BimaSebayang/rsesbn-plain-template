@@ -1,0 +1,248 @@
+body {
+	text-align: 		center;
+}
+
+.alertText {
+	height:				31px;
+}
+
+.gluearea {
+	height: 			107px;
+}
+
+.bannerlogoarea {
+	padding-left: 		23px;
+}
+
+.interInputSpliter {
+	height:				12px;
+}
+
+.username, .password {
+	width:				255px !important;
+	padding-left:		3px !important;
+}
+
+.copyright{
+	color: #555555;
+	font-size: 12px;
+	font-weight: Regular;
+	margin-bottom: 15px !important;
+}
+
+#spliter1 {
+	align:				center;
+	height:				14px;
+	margin:				24px 0px 14px !important;
+	background-image:	url(../images/login/spliter.png);
+	background-repeat:	repeat-x;
+}
+
+#spliter2 {
+	align:				center;
+	height:				14px;
+	margin:				17px 0px 6px !important;
+	background-image: 	url(../images/login/spliter.png);
+	background-repeat:	repeat-x;
+}
+
+#bannerarea td {
+	background-image:	url(../images/login_top_bg.png);
+	padding-right:		11px;
+	text-align:			right;
+	font-size:			10pt;
+}
+
+#iPortalContainer {
+	background-repeat: 	repeat-x;
+	padding-top:		134px;
+	height: 			1066px;
+}
+
+#iPortalContainer * {
+	margin: 			0;
+	padding:			0;
+}
+
+#iPortalContainer table {
+	border-collapse: 	collapse;
+	border-spacing: 	0px;
+	cell-spacing:		0px;
+	cell-padding:		0px;
+}
+
+#leftGradientMiddle {
+	background-image:	url(../images/login/left_gradient.png);
+	background-repeat: 	repeat-y;
+}
+
+#rightGradientMiddle {
+	background-image:	url(../images/login/right_gradient.png);
+	background-repeat: 	repeat-y;
+}
+
+#iPortalContainer img {
+	border:				0;
+}
+
+#iPortalContainer  #innerWrapper {
+	margin:				auto;	
+	height:				400px;
+	width:				564px;
+}
+
+#iPortalContainer #formTable1, #iPortalContainer #formTable2 {
+	width:				100%;
+}
+
+#iPortalContainer .inputControl {
+	width: 				260px;
+}
+
+#iPortalContainer #topGradient {
+	width:				100%;
+	height:				9px;
+	background-image:	url(../images/login/top_gradient.png);
+	background-repeat:	repeat-x;
+}
+
+#iPortalContainer #bottomGradient {
+	width:				100%;
+	height:				9px;
+	background-image:	url(../images/login/bottom_gradient.png);
+	background-repeat: 	repeat-x;
+}
+
+#iPortalContainer #outerTable {
+	height:				394px !important;
+}
+
+#iPortalContainer a {
+}
+
+#iPortalContainer h1 {
+	float:				left;
+	display:			inline;
+	line-height:		22px;
+}
+
+#iPortalContainer .label {
+	width:				150px;
+	text-align:			right;
+}
+
+
+#iPortalContainer div.pathway {
+	text-align:			center;
+	height:				300px;
+	width:				546px;
+}
+
+#iPortalContainer div.button {
+	height:				29px;
+	padding-left:		220px;
+}
+#iPortalContainer div.button_left{
+	float:				left; 
+	margin:				0;
+	padding:			0;
+}
+
+#iPortalContainer div.button_middle{
+	float:				left; 
+	text-align:			center; 
+	height:				25px; 
+	width:				113px; /*  7px*2(left+right) + 113px(middle) = 127px(mockup requirement) */
+	margin:				0; 
+	padding-top:		2px; 
+	background:			url('../images/button-bg-on.png') repeat-x;
+	dispaly:			block; 
+}
+
+#iPortalContainer div.button_middle a{
+	cursor:				pointer;
+	dispaly:			block;
+}
+
+#iPortalContainer div.button_right{
+	float:				left; 
+	margin:				0; 
+	padding:			0;
+}
+
+ /* clearfix (already applied on #body)
+--------------------------------*/
+.clearfix {
+	height: 			67px ;
+	border: 			1px solid rgb(200,198,198);
+/*	background-image:	url(../images/login/clearfix_background.png); */
+	background-repeat: 	repeat-x;
+}
+
+.clearfix #logoArea {
+	height:				67px;
+	width:				157px;
+}
+
+.clearfix #welcomeText {
+	padding-bottom:		6px;
+	padding-left:		11px;
+	text-align:			left;
+	width:				100%;
+}
+
+.clearfix #welcomeArea {
+	width:	364px;
+}
+
+.clearfix .helpArea {
+	padding: 0px 0px 40px;
+}
+
+
+/* Hides from IE-mac \*/
+* html .clearfix, * html #body {height: 1%;}
+.clearfix, #body {display: block;}
+/* End hide from IE-mac */
+
+
+#formTable #submit {
+	padding-right:		250px;
+}
+
+#formWrapper {
+	width:				546px;
+	height:				300px;
+}
+
+#formWrapper #layerWrapper1 {
+	width:				100%;
+}
+
+#formWrapper #layerWrapper2 {
+	width:				100%;
+}
+
+#leftGradient, #rightGradient {
+	width:				9px;
+}
+
+.corners {
+	height:				150px;
+}
+
+.button_middle input {
+	background:			transparent;
+	border:				0px;
+	color:				white;
+	width:				110px;
+}
+
+.loginInput {
+	padding-left:		7px !important;	
+	text-align:			left;
+}
+
+.inputControl {
+	border: 1px solid #999999;
+}

@@ -1,0 +1,350 @@
+body {
+	overflow-x: hidden;
+    padding-top: 0;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    border-style: none;
+}
+._clearfix {
+  *zoom: 1;
+}
+._clearfix:before,
+._clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+._clearfix:after {
+  clear: both;
+}
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+li {
+    list-style: outside none none;
+}
+li {
+    line-height: 20px;
+}
+._breadcrumb {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    list-style: outside none none;
+    margin: 0 0 20px;
+    padding: 5px 5px;
+}
+._breadcrumb > li {
+    display: inline-block;
+    text-shadow: 0 1px 0 #ffffff;
+}
+._pull-left {
+    float: left;
+}
+._pull-right {
+    float: right;
+}
+ul {
+	margin: 0;
+}
+._navbar-fixed-top {
+    left: 0;
+    margin-bottom: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+}
+._navbar-fixed-top {
+    top: 0;
+}
+.caret {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000000;
+    content: "";
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    width: 0;
+}
+#menu-app {
+    background: none repeat scroll 0 0 #eee;
+    color: #333333;;
+    display: block;
+    font-size: 13px;
+    line-height: 36px;
+    min-height: 100%;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    transition: right 0.25s ease-out 0s;
+    width: 250px;
+    z-index: 1040;
+}
+#menu-app.open {
+    right: 0;
+}
+#menu-app .wrapper-menu {
+	background: none repeat scroll 0 0 #eee;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    top: -1px;
+}
+#menu-app .bt-menu {
+	background: none repeat scroll 0 0 #eee;
+    cursor: pointer;
+    height: 61px;
+    left: -60px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -23em;
+    top: -1px;
+    transition: all 0.25s ease-out 0s;
+    width: 60px;
+}
+#menu-app .bt-menu:hover,
+#menu-app .bt-menu.active {
+    background: none repeat scroll 0 0 #eee;
+}
+#menu-app .bt-menu:before,
+#menu-app .bt-menu:after {
+    border-bottom: 4px solid rgba(136, 136, 136, 1);
+    border-top: 4px solid rgba(136, 136, 136, 1);
+    content: "";
+    display: block;
+    height: 5px;
+    left: 22px;
+    position: absolute;
+    top: 20px;
+    width: 22px;
+}
+#menu-app .bt-menu:after {
+    border-bottom: 0 none;
+    border-top: 4px solid rgba(136, 136, 136, 1);
+    left: 22px;
+    top: 38px;
+}
+#header .navbar-inner {
+    background-color: none;
+    background-image: url("../images/logo_sfmobile.png");
+    border-color: rgb(210, 214, 213);
+	min-height: 60px;
+}
+#header .wrapper {
+	margin: 0 40px;
+}
+#header .logo {
+	margin-top: 10px;
+}
+#header .settings li {
+	float: left;
+}
+#header .settings li a {
+	background-color: transparent;
+    color: #fff;
+    display: block;
+    line-height: 60px;
+    min-height: 60px;
+    padding: 0 25px;
+    text-decoration: none;
+	font-weight:bold;
+    /*text-transform: uppercase;*/
+}
+#header .breadcrumb {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0 20px;
+}
+#header .breadcrumb li {
+	color: #333;
+    float: left;
+    line-height: 59px;
+    margin-left: 5px;
+    min-height: 59px;
+	text-transform: capitalize;
+}
+#header .breadcrumb li a {
+	color: #2998fb;
+}
+#menu-app .nav {
+	list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#menu-app a {
+    color: #999;
+	font-size: 17px;
+    font-weight: 900;
+    line-height: 35px;
+    padding: 0 20px;
+ /*   text-transform: uppercase;*/
+	-webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+	text-decoration: none;
+}
+#menu-app a:hover {
+    color: #ddd;
+}
+#menu-app li.active > a {
+    color: #fff;
+}
+.custom-submenu {
+	display: none;
+    padding: 0;
+}
+#menu-app .custom-submenu > li > a {
+	display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+	font-style: italic;
+	padding-left: 40px;
+}
+#menu-app .nav {
+	margin-top: 10px;
+}
+#menu-app .nav > li > a:hover,
+#menu-app .nav > li > a:focus {
+  background-color: transparent;
+}
+#menu-app .caret {
+    border-top: 4px solid #999;
+    margin-left: 4px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+#menu-app a:hover .caret {
+    border-top-color: #fff;
+}
+#menu-app li.active .caret {
+	border-bottom: 4px solid #fff;
+	border-top-style: none;
+}
+.section {
+	margin-top: 60px;
+}
+
+.sectionComp{
+	margin-top: 20px;
+}
+
+body.login {
+	background-color: #f5f5f5;
+	background-image: -ms-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EDEDED), color-stop(1, #FFFFFF));
+	background-image: -webkit-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: linear-gradient(to bottom, #EDEDED 0%, #FFFFFF 100%);
+}
+.login-container {
+	left: 50%;
+	margin: -115px 0 0 -361px;
+	position: absolute;
+	top: 50%;
+}
+.login-container .bg {
+	background: url(../images/actuate.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 100px;
+    vertical-align: left;
+    width: 200px;
+}
+.login-container form {
+    margin: 0;
+}
+.login-container .login-controls {
+    display: inline-block;
+	vertical-align: left;
+}
+.login-container .form-horizontal .control-group:last-child {
+    margin-bottom: 0;
+}
+.login-container .form-horizontal .controls {
+    margin-left: 140px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+	height: 30px;
+    line-height: 30px;
+    width: 276px;
+}
+.btn-primary {
+background-image: linear-gradient(to bottom, #2998FB, #2998FB);
+background-repeat: repeat-x;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+background-color: #2998FB;
+}
+._left-pane {
+	width: 30%;
+}
+._right-pane {
+	margin-left: 2%;
+	width: 68%;
+}
+.box {
+	margin-bottom: 20px;
+}
+.box:last-child {
+	margin-bottom: 0;
+}
+.inner {
+/*	border: 1px solid #ccc;*/
+	min-height: 0px;
+	padding: 0px;
+}
+._left-pane .inner {
+	min-height: 160px;
+	padding-right: 0;
+}
+._right-pane .inner {
+	padding-left: 0;
+}
+._right-pane .inner .navbar {
+	width: 100% !important;
+	height: 30px !important;
+	line-height: 30px;
+}
+._right-pane .inner .navbar .navbar_layout {
+	height: 30px !important;
+}
+._right-pane .inner .navbar .navbar_layout .actuateIV_start {
+    height: 30px !important;
+    margin-top: -39px !important;
+}
+._right-pane .inner #reportpane {
+    width: 950px !important;
+}
+.tblAltCol{
+	width:100%; 
+	border-collapse:collapse; 
+}
+.tblAltCol th{ 
+	padding:7px; 
+	border:#4e95f4 1px solid;
+	font-weight:bold;
+}
+.tblAltCol td{ 
+	padding:7px; 
+	border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.tblAltCol tr{
+	background: #b8d1f3;
+}
+/*  Define the background color for all the ODD background rows  */
+.tblAltCol tr:nth-child(odd){ 
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.tblAltCol tr:nth-child(even){
+	background: #dae5f4;
+}

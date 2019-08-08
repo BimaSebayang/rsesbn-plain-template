@@ -1,0 +1,1426 @@
+.actuate_shared_resource .dialog_default_button
+{
+	background-color:#ffffff;
+	border-style:solid;
+	border-color: #528CC5;
+	border-width:1px;
+	cursor: pointer;
+	font-size		: 8pt;
+ 	font-family		: 'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+ 	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_shared_resource .dialogLabelFont
+{
+	font: 12px/16px 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+}
+
+table.actuate-widget-btn td
+{
+	/* 17500 general workaround for button widgets, because some dialog's CSS break it */
+	padding: 0px !important;
+}
+.actuate-iv-dialog .helpLinkButtonPosition
+{
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 22px;
+	height: 17px;
+	margin-bottom: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+	border:none;
+}
+
+.actuate-iv-dialog .helpLinkButtonPosition .actuate-widget-btn-left, .actuate-iv-dialog .helpLinkButtonPosition .actuate-widget-btn-right
+{
+	background:0;
+	height: 0px;
+	width : 0px;
+}
+
+.actuateCSSSprite_dialog
+{
+	background-image  : url('../images/dialog.png');
+	background-color  : transparent;
+	border-style: none;
+}
+
+.actuateIV_arrow__active
+{
+	background-image  : url('../images/arrow__r_active.gif');
+	background-color  : transparent;
+	width			  : 6px; 
+	height			  : 9px;
+	border-style	  : none;
+}
+
+/******************************************************************************
+ * Content panel
+ *****************************************************************************/
+.actuateViewerContainer .content
+{
+	position	: absolute;
+	top			: 0px;
+	margin		: 0pt;
+	padding		: 0pt;
+}
+
+.actuateViewerContainer .informationmask
+{
+	overflow	: hidden;
+	position	: absolute;
+ 	margin		: 0px;
+ 	padding		: 0px;
+ 	top			: 0px;
+ 	left		: 0px;
+ 	filter		: alpha( opacity=10 );
+  	opacity		: 0.1;
+  	background-color : white;
+ 	align		:center;
+  	font-style	: italic;
+}
+ 
+
+.actuateViewerContainer .new_navbar .closeButton
+{
+	border:0 !important;
+	height:28px;
+	background-image	: url( '../images/tomerge/firstload/navbar/back_mob.png' ) !important;
+	background-repeat	: no-repeat !important;
+}
+
+
+/******************************************************************************
+ * nav bar
+ ******************************************************************************/
+
+.actuateViewerContainer .navbar
+{
+    position			: absolute;
+	overflow			: hidden;
+	font-family			: 'Source Sans Pro',tahoma,verdana,arial,sans-serif;	
+	top					: 0px;
+	width				: 100%;
+    display				: none;
+    background : url( ../images/bgimages/bar_bg.png) repeat 0 0 !important;
+	background-color: #f4f4f4 !important; 
+	text-align			: left;
+	margin				: 0px;
+	padding				: 0px;
+	border: none !important;
+	outline				: none;
+}
+
+.actuateViewerContainer .navbar_divider
+{
+}
+
+.actuateViewerContainer .navbar td,
+.actuateViewerContainer .navbar table,
+.actuateViewerContainer .navbar div, 
+.actuateViewerContainer .navbar span,
+.actuateViewerContainer .navbar input[type="text"]
+{
+	background-color	: transparent;
+	color				: #353535 !important;
+	padding				: 0px;
+	margin				: 0px;	
+	font-family			: 'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+	font-weight			: 600;
+	font-style			: normal;
+	border				: none;
+    font-size: 16px;
+	outline: none;
+	letter-spacing:0pt;
+}
+
+.actuateViewerContainer .navbar table,
+.actuateViewerContainer .navbar div,
+.actuateViewerContainer .navbar td	
+{
+	background-image    : none;	
+}
+
+.actuateViewerContainer .navbar_layout
+{
+
+	border-spacing	: 0px;
+	font-family		: 'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+	font-style		: normal;
+	font-weight		: normal;
+}
+
+.actuateViewerContainer .navbar_seperator
+{
+	border-left-style	: groove;
+	border-left-color	: white;
+	border-left-width	: 2px;
+	width				: 0px;
+	height				: 30px;
+}
+
+.actuateViewerContainer .navbar_cell_left
+{
+	valign		: middle;
+	align		: center;
+	white-space	: nowrap;
+}
+
+.actuateViewerContainer .navbar_cell_right
+{
+	valign		:center;
+	align		:right;
+	white-space	:nowrap;
+}
+
+.actuateViewerContainer .navbar_img
+{
+	width	: 32px;
+	height	: 32px;
+}
+
+.actuateViewerContainer .navbar_start_img
+{
+	cursor	: pointer;
+	width	: 32px;
+	height	: 32px;
+}		
+
+.actuateViewerContainer .navbar_seperator_img
+{
+	cursor	: default;
+	filter	: alpha( opacity=50 );
+ 	opacity	: 0.5;
+	width	: 2px;
+	height	: 30px;
+}
+
+.actuateViewerContainer .navbar input.navbar_input_goto, .actuateViewerContainer .new_navbar input.navbar_input_goto
+{
+	width				: 30px;
+	maxlength			: 15;
+	size				: 5;
+	border-style		: none;
+	text-align			: right;
+	text-valign			: middle;
+	background-color	: white;
+	vertical-align      :center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e1e1e1;
+}
+
+.actuateViewerContainer .navbar_bottomline
+{
+	background-color	:#e1e1e1 !important;
+	height	: 1px;
+}
+
+.actuateViewerContainer .new_navbar input.navbar_input_goto
+{
+	width				: 50px;
+}	
+
+.actuateViewerContainer .navbar .navbar_totalPage
+{
+	width				: 20px;
+	maxlength			: 5;
+	size				: 5;
+	border-style		: none;
+	text-align			: left;
+	text-valign			: middle;
+
+}
+
+.actuateHandCursor
+{
+	cursor	: pointer;
+	cursor	: hand;
+}
+
+/******************************************************************************
+ * IVView common classes ( for TOC, parameter and content panel )
+ ******************************************************************************/
+.actuateViewerContainer input.closeButton
+{
+	cursor			: pointer;
+	border-style:none;
+}
+
+.actuateViewerContainer .ivViewLabel
+{
+	background-color: transparent;
+	background-image: none;
+	font-size: 14px; 
+	font-weight: bold; 
+	font-family: 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-style: normal;
+	color:white;	
+	padding: 14px 0 0 0px;
+	border: none;
+	letter-spacing:0pt;
+	margin-left		: 16px;
+	text-decoration: none;
+	word-spacing: 0pt;
+	outline: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	color:#818181;
+	line-height         : 40px;
+}
+
+.actuateViewerContainer .paneHeader
+{
+	width				: 100%;
+	height				: 40px;
+	line-height : 130%;
+	color:#818181;
+    background : url( ../images/bgimages/bg-e9.png) repeat 0 0 !important;
+	background-color: #f4f4f4 !important; 
+	position: relative;
+	text-align: left;
+	margin-right		: 30px;
+
+	padding-bottom: 3px;
+	padding-right: 3px;
+	text-indent: 0px;
+	border-top: 0px solid #e1e1e1 !important;
+}
+
+/******************************************************************************
+ * Toc
+ ******************************************************************************/
+.actuateViewerContainer .toc
+{
+	position					: absolute;
+	overflow					: hidden; 
+	border-right-style			: solid;
+	border-right-width			: 1px;
+	border-right-color			: #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+	text-indent: 0px;
+	text-transform		: none;
+  	word-spacing		: 0pt;
+  	outline				: none;
+}
+
+.actuateViewerContainer .tocItems
+{
+ 	height			: 16px;
+	padding-left		: 0px;	
+	outline			: none;
+	background-repeat	: no-repeat;
+}
+
+.actuateViewerContainer .tocContent
+{
+	overflow	: auto;
+	width		: 100%;
+	height		: 100%;
+	text-align: left;
+	font-size: 12px !important; 
+	font-weight: normal; 
+	font-family: 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-style: normal;
+	padding-left: 16px;
+	border: none;
+    background : url( ../images/bgimages/bg-e9.png) repeat 0 0 !important;
+	color: #646464 !important; 
+	letter-spacing		: 0pt;
+	text-decoration		: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	word-spacing		: 0pt;
+	outline				: none;
+	
+}
+
+.tocContent tr:focus{
+   background-color: #e9e9e9;    
+}
+
+.tocContent td:focus{
+   background-color: #e9e9e9;    
+}
+
+.tocContent .actuateIV_tocexpand{
+    height : 14px !important;	
+}
+
+/******************************************************************************
+ * Parameter Panel
+ ******************************************************************************/
+
+.actuateViewerContainer .parameter
+{
+	position					: absolute;
+	overflow					: hidden; 
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	text-indent: 0px;
+	padding-left: 0px;
+	background-image: none;
+	letter-spacing		: 0pt;
+	text-decoration		: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	word-spacing		: 0pt;
+	outline				: none;
+}
+
+.actuateViewerContainer .parameterContent
+{
+	overflow-y  : scroll;
+	overlfow-x  : auto;
+	position    : relative;
+	background-color: #E7E8E9;
+	font-size: 12px; 
+	font-family: 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	border: none;
+    background : url( ../images/bgimages/bg-e9.png) repeat 0 0 !important;
+	background-color: #f4f4f4 !important; 
+	letter-spacing		: 0pt;
+	text-decoration		: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	word-spacing		: 0pt;
+	outline				: none;
+	margin-left		: 0px;
+}
+
+.actuateViewerContainer .parameterToolbar
+{
+	position		: absolute;
+	right			: 25px;
+	margin-top		: 2px;
+	margin-right	: 5px;
+ 	outline			: none;
+	background-color: transparent;
+	padding-top		: 10px;
+}
+
+.actuateViewerContainer .parameterRunBtn
+{
+	vertical-align	: middle;
+	width			: 16px;
+	height			: 16px;
+}
+
+.actuateViewerContainer div.parameterRunBtnText
+{
+	float: right;
+	padding-top: 1px;
+	height: 16px;
+}
+
+/******************************************************************************
+ * Context menu
+ ******************************************************************************/
+#actuate_iv_ui_app_contextmenu_ivContextMenu div,
+#actuate_iv_ui_app_contextmenu_ivContextMenu input,
+#actuate_iv_ui_app_contextmenu_ivContextMenu table,
+#actuate_iv_ui_app_contextmenu_ivContextMenu td,
+#actuate_iv_ui_app_contextmenu_ivContextMenu tr,
+#actuate_iv_ui_app_contextmenu_ivContextMenu label	
+{
+	padding: 0px;
+	margin: 0px;
+	border-radius			: 0px;
+	-webkit-border-radius	: 0px;
+	-moz-border-radius		: 0px;
+	-kHTML-border-radius	: 0px;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuDiv
+{
+	width:200px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color: #b7b7b7;
+	border-radius: 4px;
+	cursor:default;
+	padding:10px 0px;
+	text-align: left;	
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu label
+{
+	font-family		: 'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+	font-size		: 14px !important;
+	font-style		: normal;
+	font-weight		: normal;
+}		
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuCell
+{
+	background-color	: white;
+	padding-top			: 3px;
+	padding-bottom		: 3px;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuItem
+{
+	height:20px;
+	padding-top:5px;
+	padding-bottom:2px;
+	padding-left:8px;
+	padding-right:10px;
+	font-family:'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+	font-size:14px !important;
+	font-style: normal;
+	font-weight: normal;
+	background-color: transparent;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuItem input, 
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuItem label
+{
+	background-color: transparent;	
+	overflow: hidden;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuItemIcon
+{
+	width: 16px;
+	height: 16px;
+ 	border-style:none;
+ 	vertical-align: bottom;
+}
+		
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuArrow
+{
+	position:absolute;
+	right:20px;
+	margin-top: 3px;
+	width: 6px;
+	height: 8px;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuArrowLabel
+{
+	padding-right: 35px;
+	padding-left: 25px;	
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuLeafLabel
+{
+	padding-right: 10px;
+	padding-left: 6px;	
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .ContextMenuHorizontalRule
+{
+ 	height				: 1px;
+ 	background-color	: #e1e1e1;
+ 	margin-left			: 0px;
+ 	margin-right		: 0px;
+ 	margin-top			: 10px;
+ 	margin-bottom		: 9px;
+ 	border-style		: none;
+ 	/* 14847: required for IE6 to set the height properly */
+ 	overflow			: hidden;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .contextMenu_shade
+{
+	position:absolute; 
+	top:15px;
+	left:20px;
+	z-index:-1; 
+	height:100%; 
+	width:100%;
+	background-color: transparent;
+}
+
+#actuate_iv_ui_app_contextmenu_ivContextMenu .contextMenu_shade img
+{
+	background-color: transparent;
+}			
+
+.actuateViewerContainer .toolbar_outermostDiv .toolbar_menuDiv
+{
+	width:180px;	
+}
+.actuateViewerContainer .toolbar_outermostDiv
+{   
+	width:200px;
+	position: absolute;
+	top:45px;
+	text-align: left;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	background-image: none;
+	letter-spacing		: 0pt;
+	text-decoration		: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	word-spacing		: 0pt;
+	outline				: none;
+}
+
+.actuateViewerContainer .toolbar_outermostDiv input
+{
+  	letter-spacing:0pt;
+  	outline: none;
+  	margin:0pt;
+  	padding: 0pt;
+}		
+
+.actuateViewerContainer .toolbar_menuDiv
+{
+	position: absolute;
+	background-color:white;
+	border-style: solid;
+	border-width: 0px;
+	border-color: #b7b7b7;
+	font-family:'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	background-image: none;
+	letter-spacing		: 0pt;
+	text-decoration		: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	word-spacing		: 0pt;
+	outline				: none;
+	width				: 165px;
+}
+
+.actuateViewerContainer .toolbar_menuDiv div
+{
+	text-decoration: none;
+	margin: 0px;
+	border: none;
+	background-image: none;
+	letter-spacing		: 0pt;
+	text-decoration		: none;
+	text-transform		: none;
+	text-indent			: 0px;
+	word-spacing		: 0pt;
+	outline				: none;
+}
+
+.actuateViewerContainer .toolbar_menuDiv_margin div
+{
+	min-width:140px;
+	padding: 3px 0 3px 16px;	
+	line-height: 20px;
+}
+
+.actuateViewerContainer .toolbar_buttonStyle
+{
+	background-color: white;
+}
+
+.actuateViewerContainer .toolbar_buttonStyle, 
+.actuateViewerContainer .parameterToolbar_buttonStyle
+{
+	color: BLACK;
+	cursor:pointer;cursor:hand;
+	font-family:'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-size:14px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	border: none;
+	outline				: none;
+	height: 20px;
+}
+
+.actuateViewerContainer .toolbar_buttonStyle input,
+.actuateViewerContainer .parameterToolbar_buttonStyle input
+	{
+	text-decoration: none;
+	padding: 0px;
+	color: black;
+	border: none;	
+}		
+
+.actuateViewerContainer .toolbar_buttonStyleDisabled
+{
+	background-color: white;
+}
+
+.actuateViewerContainer .toolbar_buttonStyleDisabled,
+.actuateViewerContainer .parameterToolbar_buttonStyleDisabled
+{
+	cursor:arrow;
+	color: GRAY;
+	font-family:'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-size:14px;
+	height: 20px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	border: none;
+	outline				: none;
+}
+
+.actuateViewerContainer .toolbar_buttonStyleDisabled input,
+.actuateViewerContainer .parameterToolbar_buttonStyleDisabled input
+	{
+	text-decoration: none;
+	padding: 0px;
+	color: gray;
+	border: none;	
+}		
+
+.actuateViewerContainer .toolbar_buttonStyleHighlighted
+{
+	cursor:pointer;cursor:hand;
+	background-color: #464646;
+	font-family:'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-size:14px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+ 	color: white;
+ 	border: none;
+ 	outline				: none;
+ 	height: 20px;
+}
+
+.actuateViewerContainer .toolbar_buttonStyleHighlighted input
+{
+	text-decoration: none;
+	padding: 0px;
+	color: black;
+	border: none;
+}		
+
+.actuateViewerContainer .toolbar_imageUrl
+{
+	vertical-align: middle;
+	width: 0px;
+	height: 0px;
+}
+
+
+/******************************************************************************
+ * CSS Sprite
+ * General images
+ ******************************************************************************/
+.actuateCSSSprite_firstload
+{
+	background-image  : url('../images/firstload.png');
+	background-color  : transparent;
+	border-style: none;
+}
+
+.actuateCSSSprite_view
+{
+	background-image  : url('../images/view.png');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_selection
+{
+	background-image  : url('../images/selection.png');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_flashgadget
+{
+	background-image  : url('../images/flashgadget.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+
+.actuateCSSSprite_bg
+{
+	background-image  : url('../images/brs.png');
+	background-color  : transparent;
+	border-style: none;
+}
+
+
+
+
+/******************************************************************************
+ * Drill Up Context menu
+ ******************************************************************************/
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu div,
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu input,
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu table,
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu td,
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu tr,
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu label	
+{
+	padding: 0px;
+	margin: 0px;
+	border-radius			: 0px;
+	-webkit-border-radius	: 0px;
+	-moz-border-radius		: 0px;
+	-kHTML-border-radius	: 0px;
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuDiv
+{
+	background-color	: white;
+	border-style		: solid;
+	border-width		: 1px;
+	border-color        : #b7b7b7;
+	cursor				: default;
+	text-align			: left;
+	table-layout		: automatic;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu label
+{
+	font-family		: 'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+	font-size		: 12px;
+	font-style		: normal;
+	font-weight		: normal;
+}		
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuCell
+{
+	background-color	: white;
+	padding-top			: 3px;
+	padding-bottom		: 3px;
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuItem
+{
+	height:20px;
+	padding-top:5px;
+	padding-bottom:2px;
+	padding-left:8px;
+	padding-right:10px;
+	font-family:'Source Sans Pro',tahoma,verdana,arial,sans-serif;
+	font-size:font-size:14px !important;
+	font-style: normal;
+	font-weight: normal;
+	background-color: transparent;
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuItem input, 
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuItem label
+{
+	background-color: transparent;	
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuItemIcon
+{
+	width: 16px;
+	height: 16px;
+ 	border-style:none;
+ 	vertical-align: bottom;
+}
+		
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuArrow
+{
+	right:20px;
+	margin-top: 3px;
+	width: 6px;
+	height: 8px;
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuArrowLabel
+{
+	padding-right: 35px;
+	padding-left: 25px;	
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuLeafLabel
+{
+	padding-right: 10px;
+	padding-left: 6px;	
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .ContextMenuHorizontalRule
+{
+ 	height				: 1px;
+ 	background-color	: #e1e1e1;
+ 	margin-left			: 4px;
+ 	margin-right		: 4px;
+ 	margin-top			: 1px;
+ 	margin-bottom		: 2px;
+ 	border-style		: none;
+ 	/* 14847: required for IE6 to set the height properly */
+ 	overflow			: hidden;
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .contextMenu_shade
+{
+	position:absolute; 
+	top:15px;
+	left:20px;
+	z-index:-1; 
+	height:100%; 
+	width:100%;
+	background-color: transparent;
+}
+
+#actuate_iv_ui_app_contextmenu_ivDrillUpMenu .contextMenu_shade img
+{
+	background-color: transparent;
+}
+
+/************************************************************
+ * Column Overlay classes used only in deasktop mode.
+ *************************************************************/
+.actuateViewerContainer .overlayHeader
+{
+ 	position			: absolute;
+ 	left				: 0px;
+ 	top                 : 2px;
+ 	height				: 24px;
+ 	background-color	: none;
+ 	z-index				: 2; /* over the shadow */
+}
+
+.actuateViewerContainer .overlayHeaderDashboard
+{
+ 	position			: absolute;
+ 	left				: 0px;
+ 	top                 : 2px;
+ 	height				: 15px;
+ 	background-color	: none;
+ 	z-index				: 2; /* over the shadow */
+}
+
+.actuateViewerContainer .overlayIcon
+{
+ 	position			: absolute;
+	top					: 4px;
+ 	width				: 16px;
+ 	height				: 16px;
+	cursor				: pointer;
+}
+
+.actuateViewerContainer .overlayMenuIcon
+{
+ 	position			: absolute;
+	top					: 4px;
+	right               : 3px;
+ 	width				: 16px;
+ 	height				: 16px;
+	cursor				: pointer;
+}
+
+.actuateViewerContainer .overlayMenuIconDashboard
+{
+ 	position			: absolute;
+	top					: 2px;
+	right               : 0px;
+ 	width				: 11px;
+ 	height				: 11px;
+	cursor				: pointer;
+}
+
+.actuateViewerContainer .overlayCornerIcon
+{
+	position			: absolute;
+	top					: 0px;
+ 	width				: 3px;
+ 	cursor				: default;
+ 	height              : 24px;
+}
+
+.actuateViewerContainer .mouseOverOverlay
+{
+	position			: absolute;
+    width				: 0px;
+    height				: 0px;
+    margin				: 0px;
+    padding				: 0px;
+    border              : none;
+}
+
+.actuateViewerContainer .mouseOverOverlayVertial
+{
+	position			: absolute;
+    background-color	: #9dc0d4;
+    width				: 1px;
+    margin				: 0px;
+    padding				: 0px;
+}
+
+.actuateViewerContainer .mouseOverOverlayHorizontal
+{
+	position			: absolute;
+    background-color	: #9dc0d4;
+    height				: 1px;
+    margin				: 0px;
+    padding				: 0px;
+}
+
+.actuateViewerContainer .mouseOverOverlayTooltip
+{
+	position			: absolute;
+    margin				: 0px;
+	padding				: 0px;
+}
+
+.actuateViewerContainer .mouseOverOverlayTooltipSpan
+{
+	border-style		: solid;
+	border-color		: black;
+	border-width		: 1px;
+	font-style			: normal;
+	font-weight			: normal;
+	font-size			: 11px;
+	font-family			: 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	color				: black;
+	background-color	: #FFFFCC;
+	margin				: 0px;
+	padding				: 2px;
+}
+
+.actuateViewerContainer .dropIndicatorImage
+{
+	width				: 16px;
+	height				: 16px;
+	border-style		: none;
+	background-color	: transparent;
+	background-image  	: url('../images/tomerge/selection/overlay/overlayswitchcolumn.gif');
+	background-repeat	: no-repeat;
+}
+
+/******************************************************************************
+ * Chart overlay
+ ******************************************************************************/
+.actuateViewerContainer .chartOverlayDrillUpIcon
+{
+ 	position			: absolute;
+	top					: 5px;
+ 	width				: 14px;
+ 	height				: 11px;
+	cursor				: pointer;	
+}
+
+/**********************************************************************
+ * Crosstab Overlay
+ ********************************************************************/
+.actuateViewerContainer .dataAnalyzerOverlayIcon
+{
+ 	position			: absolute;
+	top					: 3px;
+	left				: 3px;
+ 	width				: 16px;
+ 	height				: 16px;
+	cursor				: pointer;
+}
+
+.actuateViewerContainer .dataAnalyzerOverlayText
+{
+	position			: absolute;
+	top					: 0px;
+	left				: 20px;
+	padding				: 3px 0px 0px 2px;
+ 	overflow			: hidden;
+	cursor				: pointer;
+	font-size			: 12px; 
+	font-family			: 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-style			: normal;
+	white-space			: nowrap;
+	color				: #353535;
+}
+
+#toolbar_menuDiv,.ContextMenuDiv
+{
+	border-style:solid;
+	border-width:1px;
+	border-color: #b7b7b7;
+	border-radius: 5px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+.columnOverlayHeader {
+    border-style: solid;
+    border-radius: 5px 5px 0 0 !important;
+    border-top-width: 1px  !important;
+    border-bottom-width: 0px !important;
+    border-left-width: 1px  !important;
+    border-right-width: 1px !important;
+    border-color: #cccccc;
+    background-color: #e9e9e9;
+}
+
+.dashboardOverlayHeader {
+    border-style: solid;
+    border-top-width: 1px  !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px  !important;
+    border-right-width: 1px !important;
+    border-color: #cccccc;
+    background-color: #e9e9e9;
+}/******************************************************************************
+ *	Copyright (c) 2004 Actuate Corporation and others.
+ *	All rights reserved. This program and the accompanying materials 
+ *	are made available under the terms of the Eclipse Public License v1.0
+ *	which accompanies this distribution, and is available at
+ *	http://www.eclipse.org/legal/epl-v10.html
+ *	
+ *	Contributors:
+ *		Actuate Corporation - Initial implementation.
+ *****************************************************************************/
+@CHARSET "ISO-8859-1";
+
+/******************************************************************************
+ * firstload.png
+ ******************************************************************************/
+.actuateIV_BrsEdit{ background-position: 0 0; width: 32px; height: 32px; } 
+.actuateIV_BrsEdit_over{ background-position: 0 -34px; width: 32px; height: 32px; } 
+.actuateIV_Close{ background-position: 0 -68px; width: 14px; height: 14px; } 
+.actuateIV_Collapse{ background-position: 0 -84px; width: 9px; height: 9px; } 
+.actuateIV_Expand{ background-position: 0 -95px; width: 9px; height: 9px; } 
+.actuateIV_Export{ background-position: 0 -106px; width: 16px; height: 16px; } 
+.actuateIV_ExportReport{ background-position: 0 -124px; width: 16px; height: 16px; } 
+.actuateIV_ExportReport_disabled{ background-position: 0 -142px; width: 16px; height: 16px; } 
+.actuateIV_Export_disabled{ background-position: 0 -160px; width: 16px; height: 16px; } 
+.actuateIV_Facebook_enable{ background-position: 0 -178px; width: 18px; height: 18px; } 
+.actuateIV_Hide_margin{ background-position: 0 -198px; width: 16px; height: 16px; } 
+.actuateIV_Hide_show_item{ background-position: 0 -216px; width: 16px; height: 16px; } 
+.actuateIV_Hide_show_item_disabled{ background-position: 0 -234px; width: 16px; height: 16px; } 
+.actuateIV_Interactive_viewer{ background-position: 0 -252px; width: 16px; height: 16px; } 
+.actuateIV_Interactive_viewer_disabled{ background-position: 0 -270px; width: 16px; height: 16px; } 
+.actuateIV_Launch_viewer{ background-position: 0 -288px; width: 16px; height: 16px; } 
+.actuateIV_Link_to_pg{ background-position: 0 -306px; width: 16px; height: 16px; } 
+.actuateIV_MOB_Close{ background-position: 0 -324px; width: 35px; height: 30px; } 
+.actuateIV_MOB_File{ background-position: 0 -356px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Redo{ background-position: 0 -388px; width: 35px; height: 30px; } 
+.actuateIV_MOB_TOC{ background-position: 0 -420px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Undo{ background-position: 0 -452px; width: 35px; height: 30px; } 
+.actuateIV_MOB_openRecent{ background-position: 0 -484px; width: 35px; height: 30px; } 
+.actuateIV_Parameter{ background-position: 0 -516px; width: 13px; height: 16px; } 
+.actuateIV_Parameter_disabled{ background-position: 0 -534px; width: 13px; height: 16px; } 
+.actuateIV_Print{ background-position: 0 -552px; width: 16px; height: 16px; } 
+.actuateIV_Print_disabled{ background-position: 0 -570px; width: 16px; height: 16px; } 
+.actuateIV_Save{ background-position: 0 -588px; width: 16px; height: 16px; } 
+.actuateIV_Save_disabled{ background-position: 0 -606px; width: 16px; height: 16px; } 
+.actuateIV_Show_margin{ background-position: 0 -624px; width: 16px; height: 16px; } 
+.actuateIV_Toc{ background-position: 0 -642px; width: 14px; height: 16px; } 
+.actuateIV_Toc_disabled{ background-position: 0 -660px; width: 14px; height: 16px; } 
+.actuateIV_Toc_mob{ background-position: 0 -678px; width: 32px; height: 23px; } 
+.actuateIV_back_mob{ background-position: 0 -703px; width: 68px; height: 29px; } 
+.actuateIV_collapsexpand{ background-position: 0 -734px; width: 9px; height: 9px; } 
+.actuateIV_disable_brsEdit{ background-position: 0 -745px; width: 32px; height: 32px; } 
+.actuateIV_divider{ background-position: 0 -779px; width: 2px; height: 30px; } 
+.actuateIV_first{ background-position: 0 -811px; width: 16px; height: 16px; } 
+.actuateIV_first_disabled{ background-position: 0 -829px; width: 16px; height: 16px; } 
+.actuateIV_first_mob{ background-position: 0 -847px; width: 32px; height: 23px; } 
+.actuateIV_first_over{ background-position: 0 -872px; width: 16px; height: 16px; } 
+.actuateIV_h2_bg{ background-position: 0 -890px; width: 7px; height: 7px; } 
+.actuateIV_icon-back1{ background-position: 0 -899px; width: 36px; height: 30px; } 
+.actuateIV_last{ background-position: 0 -931px; width: 16px; height: 16px; } 
+.actuateIV_last_disabled{ background-position: 0 -949px; width: 16px; height: 16px; } 
+.actuateIV_last_mob{ background-position: 0 -967px; width: 32px; height: 23px; } 
+.actuateIV_last_over{ background-position: 0 -992px; width: 16px; height: 16px; } 
+.actuateIV_logo{ background-position: 0 -1010px; width: 116px; height: 22px; } 
+.actuateIV_next{ background-position: 0 -1034px; width: 16px; height: 16px; } 
+.actuateIV_next_disabled{ background-position: 0 -1052px; width: 16px; height: 16px; } 
+.actuateIV_next_mob{ background-position: 0 -1070px; width: 32px; height: 23px; } 
+.actuateIV_next_over{ background-position: 0 -1095px; width: 16px; height: 16px; } 
+.actuateIV_prev{ background-position: 0 -1113px; width: 16px; height: 16px; } 
+.actuateIV_prev_disabled{ background-position: 0 -1131px; width: 16px; height: 16px; } 
+.actuateIV_prev_mob{ background-position: 0 -1149px; width: 32px; height: 23px; } 
+.actuateIV_prev_over{ background-position: 0 -1174px; width: 16px; height: 16px; } 
+.actuateIV_redo{ background-position: 0 -1192px; width: 32px; height: 32px; } 
+.actuateIV_redo_disabled{ background-position: 0 -1226px; width: 16px; height: 16px; } 
+.actuateIV_redo_mob{ background-position: 0 -1244px; width: 32px; height: 23px; } 
+.actuateIV_redo_over{ background-position: 0 -1269px; width: 32px; height: 32px; } 
+.actuateIV_start{ background-position: 0 -1303px; width: 32px; height: 32px; } 
+.actuateIV_start_active{ background-position: 0 -1337px; width: 32px; height: 32px; } 
+.actuateIV_start_disable{ background-position: 0 -1371px; width: 32px; height: 32px; } 
+.actuateIV_start_mob{ background-position: 0 -1405px; width: 32px; height: 22px; } 
+.actuateIV_start_over{ background-position: 0 -1429px; width: 32px; height: 32px; } 
+.actuateIV_toolbarHelp{ background-position: 0 -1463px; width: 16px; height: 16px; } 
+.actuateIV_undo{ background-position: 0 -1481px; width: 32px; height: 32px; } 
+.actuateIV_undo_disabled{ background-position: 0 -1515px; width: 16px; height: 16px; } 
+.actuateIV_undo_mob{ background-position: 0 -1533px; width: 32px; height: 23px; } 
+.actuateIV_undo_over{ background-position: 0 -1558px; width: 32px; height: 32px; } 
+
+/******************************************************************************
+ * view.gif
+ ******************************************************************************/
+.actuateIV_parameterrun{ background-position: 0 0; width: 16px; height: 16px; } 
+.actuateIV_parameterrun_disabled{ background-position: 0 -18px; width: 16px; height: 16px; } 
+.actuateIV_parameterrun_over{ background-position: 0 -36px; width: 16px; height: 16px; } 
+.actuateIV_parameterrun_running{ background-position: 0 -54px; width: 16px; height: 16px; }  
+.actuateIV_tocclose{ background-position: 0 -108px; width: 16px; height: 16px; } 
+.actuateIV_toccollapse{ background-position: 0 -126px; width: 12px; height: 12px; } 
+.actuateIV_tocexpand{ background-position: 0 -140px; width: 12px; height: 12px; } 
+.actuateIV_tocleaf{ background-position: 0 -154px; width: 16px; height: 16px; } 
+.actuateIV_tocleaf_active{ background-position: 0 -172px; width: 16px; height: 16px; } 
+
+/******************************************************************************
+ * selection.png
+ ******************************************************************************/
+.actuateIV_A_transparent{ background-position: 0 0; width: 16px; height: 16px; } 
+.actuateIV_Add_group{ background-position: 0 -66px; width: 16px; height: 16px; } 
+.actuateIV_Add_group_active{ background-position: 0 -132px; width: 16px; height: 16px; } 
+.actuateIV_Advance_sort{ background-position: 0 -198px; width: 17px; height: 16px; } 
+.actuateIV_Aggregate{ background-position: 0 -264px; width: 16px; height: 16px; } 
+.actuateIV_Aggregate_active{ background-position: 0 -330px; width: 16px; height: 16px; } 
+.actuateIV_Align_center{ background-position: 0 -396px; width: 16px; height: 16px; } 
+.actuateIV_Align_center_active{ background-position: 0 -462px; width: 16px; height: 16px; } 
+.actuateIV_Align_center_active{ background-position: 0 -528px; width: 16px; height: 16px; } 
+.actuateIV_Align_left{ background-position: 0 -594px; width: 16px; height: 16px; } 
+.actuateIV_Align_left_active{ background-position: 0 -660px; width: 16px; height: 16px; } 
+.actuateIV_Align_right{ background-position: 0 -726px; width: 16px; height: 16px; } 
+.actuateIV_Align_right_active{ background-position: 0 -792px; width: 16px; height: 16px; } 
+.actuateIV_Apply{ background-position: 0 -858px; width: 16px; height: 16px; } 
+.actuateIV_Apply_view{ background-position: 0 -924px; width: 16px; height: 16px; } 
+.actuateIV_Calculation{ background-position: 0 -990px; width: 16px; height: 16px; } 
+.actuateIV_Calculation_active{ background-position: 0 -1056px; width: 16px; height: 16px; } 
+.actuateIV_Copy_format{ background-position: 0 -1122px; width: 16px; height: 16px; } 
+.actuateIV_Copy_style{ background-position: 0 -1188px; width: 16px; height: 16px; } 
+.actuateIV_DataAnalyzer{ background-position: 0 -1254px; width: 16px; height: 16px; } 
+.actuateIV_DataAnalyzer_active{ background-position: 0 -1320px; width: 16px; height: 16px; } 
+.actuateIV_DataAnalyzer_over{ background-position: 0 -1386px; width: 16px; height: 16px; } 
+.actuateIV_Delete{ background-position: 0 -1452px; width: 16px; height: 16px; } 
+.actuateIV_Delete{ background-position: 0 -1518px; width: 16px; height: 16px; } 
+.actuateIV_Delete_active{ background-position: 0 -1584px; width: 16px; height: 16px; } 
+.actuateIV_Delete_group{ background-position: 0 -1650px; width: 16px; height: 16px; } 
+.actuateIV_EditCalculation{ background-position: 0 -1716px; width: 15px; height: 16px; } 
+.actuateIV_Filter_disabled{ background-position: 0 -1782px; width: 16px; height: 16px; } 
+.actuateIV_Format_data{ background-position: 0 -1848px; width: 16px; height: 16px; } 
+.actuateIV_Format_data_active{ background-position: 0 -1914px; width: 16px; height: 16px; } 
+.actuateIV_Format_data_disabled{ background-position: -67px 0; width: 16px; height: 16px; } 
+.actuateIV_Format_font{ background-position: -67px -66px; width: 15px; height: 16px; } 
+.actuateIV_Format_font{ background-position: -67px -132px; width: 16px; height: 16px; } 
+.actuateIV_Format_font_active{ background-position: -67px -198px; width: 16px; height: 16px; } 
+.actuateIV_Hide_column{ background-position: -67px -264px; width: 16px; height: 16px; } 
+.actuateIV_Invoke{ background-position: -67px -330px; width: 16px; height: 16px; } 
+.actuateIV_Invoke_bg{ background-position: -67px -396px; width: 32px; height: 30px; } 
+.actuateIV_Invoke_disabled{ background-position: -67px -476px; width: 16px; height: 16px; } 
+.actuateIV_MOB_Chart-Type{ background-position: -67px -542px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Filter{ background-position: -67px -622px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Format_Data{ background-position: -67px -702px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Object{ background-position: -67px -782px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Sort-Ascending{ background-position: -67px -862px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Sort-Descending{ background-position: -67px -942px; width: 35px; height: 30px; } 
+.actuateIV_More_on16{ background-position: -67px -1022px; width: 16px; height: 16px; } 
+.actuateIV_Move_column{ background-position: -67px -1088px; width: 16px; height: 16px; } 
+.actuateIV_Move_to_left{ background-position: -67px -1154px; width: 16px; height: 16px; } 
+.actuateIV_Move_to_right{ background-position: -67px -1220px; width: 16px; height: 16px; } 
+.actuateIV_Page_break{ background-position: -67px -1286px; width: 16px; height: 16px; } 
+.actuateIV_PrintServer{ background-position: -67px -1352px; width: 16px; height: 16px; } 
+.actuateIV_Reorder_columns{ background-position: -67px -1418px; width: 16px; height: 16px; } 
+.actuateIV_Show_all_columns{ background-position: -67px -1484px; width: 16px; height: 16px; } 
+.actuateIV_SortMenu16{ background-position: -67px -1550px; width: 16px; height: 16px; } 
+.actuateIV_SortMenu16_active{ background-position: -67px -1616px; width: 16px; height: 16px; } 
+.actuateIV_Sort_ascending{ background-position: -67px -1682px; width: 16px; height: 16px; } 
+.actuateIV_Sort_ascending_active{ background-position: -67px -1748px; width: 16px; height: 16px; } 
+.actuateIV_Sort_ascending_disabled{ background-position: -67px -1814px; width: 16px; height: 16px; } 
+.actuateIV_Sort_descending{ background-position: -67px -1880px; width: 16px; height: 16px; } 
+.actuateIV_Sort_descending_active{ background-position: -67px -1946px; width: 16px; height: 16px; } 
+.actuateIV_Sort_descending_disabled{ background-position: -152px 0; width: 16px; height: 16px; } 
+.actuateIV_Switch_view{ background-position: -152px -66px; width: 16px; height: 16px; } 
+.actuateIV_Text{ background-position: -152px -132px; width: 16px; height: 16px; } 
+.actuateIV_Text_disabled{ background-position: -152px -198px; width: 16px; height: 16px; } 
+.actuateIV_align16{ background-position: -152px -264px; width: 16px; height: 16px; } 
+.actuateIV_arrow__r{ background-position: -152px -330px; width: 6px; height: 9px; } 
+.actuateIV_arrow__r_active{ background-position: -152px -389px; width: 6px; height: 9px; } 
+.actuateIV_button_arrow_bg{ background-position: -152px -448px; width: 19px; height: 27px; } 
+.actuateIV_button_bg{ background-position: -152px -525px; width: 27px; height: 27px; } 
+.actuateIV_button_bg_gr{ background-position: -152px -602px; width: 27px; height: 27px; } 
+.actuateIV_calculation16{ background-position: -152px -679px; width: 16px; height: 16px; } 
+.actuateIV_calculation16_active{ background-position: -152px -745px; width: 16px; height: 16px; } 
+.actuateIV_chartFlash16{ background-position: -152px -811px; width: 16px; height: 16px; } 
+.actuateIV_chartFlash16_active{ background-position: -152px -877px; width: 16px; height: 16px; } 
+.actuateIV_chartHTML516{ background-position: -152px -943px; width: 16px; height: 16px; } 
+.actuateIV_chartHTML516_active{ background-position: -152px -1009px; width: 16px; height: 16px; } 
+.actuateIV_chart_format{ background-position: -152px -1075px; width: 16px; height: 16px; } 
+.actuateIV_chart_format_active{ background-position: -152px -1141px; width: 16px; height: 16px; } 
+.actuateIV_column_width{ background-position: -152px -1207px; width: 16px; height: 16px; } 
+.actuateIV_column_width_active{ background-position: -152px -1273px; width: 16px; height: 16px; } 
+.actuateIV_conditional_format{ background-position: -152px -1339px; width: 16px; height: 16px; } 
+.actuateIV_do_not_repeat{ background-position: -152px -1405px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories{ background-position: -152px -1471px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories_active{ background-position: -152px -1537px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories_disabled{ background-position: -152px -1603px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories_over{ background-position: -152px -1669px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series{ background-position: -152px -1735px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series_active{ background-position: -152px -1801px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series_disabled{ background-position: -152px -1867px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series_over{ background-position: -152px -1933px; width: 16px; height: 16px; } 
+.actuateIV_filter16{ background-position: -237px 0; width: 16px; height: 16px; } 
+.actuateIV_filter16_active{ background-position: -237px -66px; width: 16px; height: 16px; } 
+.actuateIV_font16{ background-position: -237px -132px; width: 16px; height: 16px; } 
+.actuateIV_font16_active{ background-position: -237px -198px; width: 16px; height: 16px; } 
+.actuateIV_groupDelete16{ background-position: -237px -264px; width: 16px; height: 16px; } 
+.actuateIV_groupDelete16_active{ background-position: -237px -330px; width: 16px; height: 16px; } 
+.actuateIV_help16{ background-position: -237px -396px; width: 16px; height: 16px; } 
+.actuateIV_help16_active{ background-position: -237px -462px; width: 16px; height: 16px; } 
+.actuateIV_hide_detail{ background-position: -237px -528px; width: 16px; height: 16px; } 
+.actuateIV_hide_tooltip{ background-position: -237px -594px; width: 16px; height: 16px; } 
+.actuateIV_managedata16{ background-position: -237px -660px; width: 16px; height: 16px; } 
+.actuateIV_managedata16_active{ background-position: -237px -726px; width: 16px; height: 16px; } 
+.actuateIV_modify16{ background-position: -237px -792px; width: 16px; height: 16px; } 
+.actuateIV_modify16_active{ background-position: -237px -858px; width: 16px; height: 16px; } 
+.actuateIV_open16{ background-position: -237px -924px; width: 16px; height: 16px; } 
+.actuateIV_open16_active{ background-position: -237px -990px; width: 16px; height: 16px; } 
+.actuateIV_overlay_cornertopLeft{ background-position: -237px -1056px; width: 3px; height: 22px; } 
+.actuateIV_overlay_cornertopRight{ background-position: -237px -1128px; width: 3px; height: 22px; } 
+.actuateIV_overlay_drill_up_from_Categories{ background-position: -237px -1200px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Categories_active{ background-position: -237px -1266px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Categories_disabled{ background-position: -237px -1332px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Categories_over{ background-position: -237px -1398px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series{ background-position: -237px -1464px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series_active{ background-position: -237px -1530px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series_disabled{ background-position: -237px -1596px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series_over{ background-position: -237px -1662px; width: 16px; height: 16px; } 
+.actuateIV_overlaychart{ background-position: -237px -1728px; width: 25px; height: 16px; } 
+.actuateIV_overlaydataAnalyzer{ background-position: -237px -1794px; width: 14px; height: 14px; } 
+.actuateIV_overlaydataAnalyzer_over{ background-position: -237px -1858px; width: 14px; height: 14px; } 
+.actuateIV_overlayedit{ background-position: -237px -1922px; width: 16px; height: 16px; } 
+.actuateIV_overlayedit_active{ background-position: -322px 0; width: 16px; height: 16px; } 
+.actuateIV_overlayedit_m{ background-position: -322px -66px; width: 16px; height: 16px; } 
+.actuateIV_overlayedit_over{ background-position: -322px -132px; width: 16px; height: 16px; } 
+.actuateIV_overlayexistfilter{ background-position: -322px -198px; width: 16px; height: 16px; } 
+.actuateIV_overlayexistfilter_active{ background-position: -322px -264px; width: 16px; height: 16px; } 
+.actuateIV_overlayexistfilter_over{ background-position: -322px -330px; width: 16px; height: 16px; } 
+.actuateIV_overlayfilter{ background-position: -322px -396px; width: 16px; height: 16px; } 
+.actuateIV_overlayfilter_over{ background-position: -322px -462px; width: 16px; height: 16px; } 
+.actuateIV_overlaymenu{ background-position: -322px -528px; width: 16px; height: 16px; } 
+.actuateIV_overlaymenu_active{ background-position: -322px -594px; width: 16px; height: 16px; } 
+.actuateIV_overlaymenu_dashboard{ background-position: -322px -660px; width: 11px; height: 11px; } 
+.actuateIV_overlaymenu_over{ background-position: -322px -721px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortasc{ background-position: -322px -787px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortasc_over{ background-position: -322px -853px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortdesc{ background-position: -322px -919px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortdesc_over{ background-position: -322px -985px; width: 16px; height: 16px; } 
+.actuateIV_overlayswitchcolumn{ background-position: -322px -1051px; width: 11px; height: 6px; } 
+.actuateIV_overlayswitchcolumn_active{ background-position: -322px -1107px; width: 11px; height: 6px; } 
+.actuateIV_overlayswitchtotable{ background-position: -322px -1163px; width: 20px; height: 20px; } 
+.actuateIV_overlayswitchtotable_active{ background-position: -322px -1233px; width: 20px; height: 20px; } 
+.actuateIV_parameter16{ background-position: -322px -1303px; width: 16px; height: 16px; } 
+.actuateIV_parameter16_active{ background-position: -322px -1369px; width: 16px; height: 16px; } 
+.actuateIV_redo16{ background-position: -322px -1435px; width: 16px; height: 16px; } 
+.actuateIV_redo16_active{ background-position: -322px -1501px; width: 16px; height: 16px; } 
+.actuateIV_repeat{ background-position: -322px -1567px; width: 16px; height: 16px; } 
+.actuateIV_save16{ background-position: -322px -1633px; width: 16px; height: 16px; } 
+.actuateIV_save16_active{ background-position: -322px -1699px; width: 16px; height: 16px; } 
+.actuateIV_saveas16{ background-position: -322px -1765px; width: 16px; height: 16px; } 
+.actuateIV_saveas16_active{ background-position: -322px -1831px; width: 16px; height: 16px; } 
+.actuateIV_savepreview16{ background-position: -322px -1897px; width: 16px; height: 16px; } 
+.actuateIV_savepreview16_active{ background-position: -407px 0; width: 16px; height: 16px; } 
+.actuateIV_section16{ background-position: -407px -66px; width: 16px; height: 16px; } 
+.actuateIV_section16_active{ background-position: -407px -132px; width: 16px; height: 16px; } 
+.actuateIV_sectionDelete16{ background-position: -407px -198px; width: 16px; height: 16px; } 
+.actuateIV_sectionDelete16_active{ background-position: -407px -264px; width: 16px; height: 16px; } 
+.actuateIV_show_detail{ background-position: -407px -330px; width: 16px; height: 16px; } 
+.actuateIV_show_tooltip{ background-position: -407px -396px; width: 16px; height: 16px; } 
+.actuateIV_sort16{ background-position: -407px -462px; width: 16px; height: 16px; } 
+.actuateIV_sort16_active{ background-position: -407px -528px; width: 16px; height: 16px; } 
+.actuateIV_theme16{ background-position: -407px -594px; width: 16px; height: 16px; } 
+.actuateIV_theme16_active{ background-position: -407px -660px; width: 16px; height: 16px; } 
+.actuateIV_toolbarchart{ background-position: -407px -726px; width: 16px; height: 16px; } 
+.actuateIV_toolbarchartOff{ background-position: -407px -792px; width: 16px; height: 16px; } 
+.actuateIV_toolbarchart_active{ background-position: -407px -858px; width: 16px; height: 16px; } 
+.actuateIV_toolbarfilter{ background-position: -407px -924px; width: 16px; height: 16px; } 
+.actuateIV_toolbarfilter{ background-position: -407px -990px; width: 32px; height: 32px; } 
+.actuateIV_toolbarfilter_over{ background-position: -407px -1072px; width: 32px; height: 32px; } 
+.actuateIV_top_bottom_N{ background-position: -407px -1154px; width: 16px; height: 16px; } 
+.actuateIV_top_bottom_N_active{ background-position: -407px -1220px; width: 16px; height: 16px; } 
+.actuateIV_undo16{ background-position: -407px -1286px; width: 16px; height: 16px; } 
+.actuateIV_undo16_active{ background-position: -407px -1352px; width: 16px; height: 16px; } 
+
+
+
+/******************************************************************************
+ * dialog.png
+ ******************************************************************************/
+
+.actuateIV_Add{ background-position: 0 0; width: 16px; height: 16px; } 
+.actuateIV_AddAll{ background-position: 0 -18px; width: 16px; height: 16px; } 
+.actuateIV_AddAll_disabled{ background-position: 0 -36px; width: 16px; height: 16px; } 
+.actuateIV_Add_disabled{ background-position: 0 -54px; width: 16px; height: 16px; } 
+.actuateIV_AlignCenter_disable{ background-position: 0 -72px; width: 32px; height: 32px; } 
+.actuateIV_AlignCenter_enable{ background-position: 0 -106px; width: 32px; height: 32px; } 
+.actuateIV_AlignCenter_over{ background-position: 0 -140px; width: 32px; height: 32px; } 
+.actuateIV_AlignLeft_disable{ background-position: 0 -174px; width: 32px; height: 32px; } 
+.actuateIV_AlignLeft_enable{ background-position: 0 -208px; width: 32px; height: 32px; } 
+.actuateIV_AlignLeft_over{ background-position: 0 -242px; width: 32px; height: 32px; } 
+.actuateIV_AlignRight_disable{ background-position: 0 -276px; width: 32px; height: 32px; } 
+.actuateIV_AlignRight_enable{ background-position: 0 -310px; width: 32px; height: 32px; } 
+.actuateIV_AlignRight_over{ background-position: 0 -344px; width: 32px; height: 32px; } 
+.actuateIV_Container_corner_left_bottom{ background-position: 0 -378px; width: 15px; height: 15px; } 
+.actuateIV_Container_corner_left_top{ background-position: 0 -395px; width: 15px; height: 15px; } 
+.actuateIV_Container_corner_right_bottom{ background-position: 0 -412px; width: 15px; height: 15px; } 
+.actuateIV_Container_corner_right_top{ background-position: 0 -429px; width: 15px; height: 15px; } 
+.actuateIV_Container_shade_bottom{ background-position: 0 -446px; width: 290px; height: 42px; } 
+.actuateIV_Container_shade_corner{ background-position: 0 -490px; width: 35px; height: 40px; } 
+.actuateIV_Container_shade_right{ background-position: 0 -532px; width: 42px; height: 240px; } 
+.actuateIV_Movedown{ background-position: 0 -774px; width: 25px; height: 26px; } 
+.actuateIV_Moveup{ background-position: 0 -802px; width: 25px; height: 26px; } 
+.actuateIV_Remove{ background-position: 0 -830px; width: 16px; height: 16px; } 
+.actuateIV_RemoveAll{ background-position: 0 -848px; width: 16px; height: 16px; } 
+.actuateIV_RemoveAll_disabled{ background-position: 0 -866px; width: 16px; height: 16px; } 
+.actuateIV_Remove_disabled{ background-position: 0 -884px; width: 16px; height: 16px; } 
+.actuateIV_arrow_down_mobi{ background-position: 0 -902px; width: 32px; height: 32px; } 
+.actuateIV_arrow_up_mobi{ background-position: 0 -936px; width: 32px; height: 32px; } 
+.actuateIV_bold_disable{ background-position: 0 -1004px; width: 32px; height: 32px; } 
+.actuateIV_bold_disable_mobi{ background-position: 0 -1004px; width: 32px; height: 32px; } 
+.actuateIV_bold_enable{ background-position: 0 -1038px; width: 26px; height: 26px; } 
+.actuateIV_bold_enable{ background-position: 0 -1066px; width: 32px; height: 32px; } 
+.actuateIV_bold_enable_mobi{ background-position: 0 -1100px; width: 32px; height: 32px; } 
+.actuateIV_bold_over{ background-position: 0 -1134px; width: 32px; height: 32px; } 
+.actuateIV_calendar{ background-position: 0 -1168px; width: 34px; height: 21px; } 
+.actuateIV_chartformat_collapse{ background-position: 0 -1191px; width: 16px; height: 16px; } 
+.actuateIV_chartformat_expand{ background-position: 0 -1209px; width: 16px; height: 16px; } 
+.actuateIV_dialogClose{ background-position: 0 -1227px; width: 14px; height: 13px; } 
+.actuateIV_dialogClose_mob{ background-position: 0 -1242px; width: 12px; height: 12px; } 
+.actuateIV_dialogHelp{ background-position: 0 -1256px; width: 21px; height: 21px; } 
+.actuateIV_down-arrow{ background-position: 0 -1279px; width: 16px; height: 16px; } 
+.actuateIV_expression_invalid{ background-position: 0 -1297px; width: 14px; height: 13px; } 
+.actuateIV_expression_valid{ background-position: 0 -1312px; width: 14px; height: 13px; } 
+.actuateIV_fileGeneric16{ background-position: 0 -1327px; width: 16px; height: 16px; } 
+.actuateIV_folderClose16{ background-position: 0 -1345px; width: 16px; height: 16px; } 
+.actuateIV_italic_disable{ background-position: 0 -1397px; width: 32px; height: 32px; } 
+.actuateIV_italic_disable_mobi{ background-position: 0 -1397px; width: 32px; height: 32px; } 
+.actuateIV_italic_enable{ background-position: 0 -1431px; width: 32px; height: 32px; } 
+.actuateIV_italic_enable_mobi{ background-position: 0 -1465px; width: 32px; height: 32px; } 
+.actuateIV_italic_over{ background-position: 0 -1499px; width: 32px; height: 32px; } 
+.actuateIV_ltarrow{ background-position: 0 -1533px; width: 17px; height: 17px; } 
+.actuateIV_minus_mob{ background-position: 0 -1552px; width: 32px; height: 32px; } 
+.actuateIV_open16{ background-position: 0 -1586px; width: 16px; height: 16px; } 
+.actuateIV_plus_mob{ background-position: 0 -1604px; width: 32px; height: 32px; } 
+.actuateIV_rtarrow{ background-position: 0 -1638px; width: 17px; height: 17px; } 
+.actuateIV_underline_disable{ background-position: 0 -1691px; width: 32px; height: 32px; } 
+.actuateIV_underline_disable_mobi{ background-position: 0 -1691px; width: 32px; height: 32px; } 
+.actuateIV_underline_enable{ background-position: 0 -1725px; width: 32px; height: 32px; } 
+.actuateIV_underline_over{ background-position: 0 -1759px; width: 32px; height: 32px; } 
+.actuateIV_up-arrow{ background-position: 0 -1793px; width: 16px; height: 16px; } 
+
+
+
+
+/******************************************************************************
+ * flashgadget.gif
+ ******************************************************************************/
+
+.actuateIV_Bullet{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_Bullet_selected{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_Cylinder{ background-position: 0 -106px; width: 48px; height: 48px; } 
+.actuateIV_Cylinder_selected{ background-position: 0 -159px; width: 48px; height: 48px; } 
+.actuateIV_LinearGauge{ background-position: 0 -212px; width: 48px; height: 48px; } 
+.actuateIV_LinearGauge_selected{ background-position: 0 -265px; width: 48px; height: 48px; } 
+.actuateIV_Meter{ background-position: 0 -318px; width: 48px; height: 48px; } 
+.actuateIV_Meter_selected{ background-position: 0 -371px; width: 48px; height: 48px; } 
+.actuateIV_Thermometer{ background-position: 0 -424px; width: 48px; height: 48px; } 
+.actuateIV_Thermometer_selected{ background-position: 0 -477px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ * brs.png
+ ******************************************************************************/
+ .actuateIV_BG_Divider{background-position: -34px -421px; height: 32px; width: 16px;}
